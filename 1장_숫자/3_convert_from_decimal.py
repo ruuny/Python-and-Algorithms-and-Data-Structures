@@ -9,7 +9,7 @@ def convert_from_decimal(number, base):
 def test_convert_from_decimal():
     number, base = 9, 2
     assert(convert_from_decimal(number, base) == 1001)
-    print('Tests passed!')
+    print("테스트 통과!")
 
 if __name__ == '__main__':
     test_convert_from_decimal()

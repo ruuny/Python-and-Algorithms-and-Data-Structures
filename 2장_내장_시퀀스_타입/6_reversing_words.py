@@ -7,6 +7,6 @@ def reversing_words_slice(word):
 
 
 if __name__ == '__main__':
-    str1 = "Buffy is a Vampire Slayer"
-    str2 = reversing_words(str1)
+    str1 = "파이썬 알고리즘 너무 재미있다"
+    str2 = reversing_words_slice(str1)
     print(str2)

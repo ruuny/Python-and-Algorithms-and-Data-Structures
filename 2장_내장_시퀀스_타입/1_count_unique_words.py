@@ -1,7 +1,6 @@
 import string
 import sys
 
-
 def count_unique_word():
     words = {} 
     strip = string.whitespace + string.punctuation + string.digits + "\"'" 
@@ -14,7 +13,7 @@ def count_unique_word():
                         words[word] = words.get(word,0) +1
 
     for word in sorted(words):
-        print("'{0}' occurs {1} times.".format(word, words[word]))
+        print("'{0}': {1}번".format(word, words[word]))
 
 if __name__ == '__main__':
     count_unique_word()

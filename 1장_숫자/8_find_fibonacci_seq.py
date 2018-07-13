@@ -21,7 +21,7 @@ def test_find_fib():
     assert(find_fibonacci_seq_rec(n) == 55)
     assert(find_fibonacci_seq_iter(n) == 55)
     assert(find_fibonacci_seq_form(n) == 55)
-    print('Tests passed!')
+    print("테스트 통과!")
 
 if __name__ == '__main__':
     test_find_fib()

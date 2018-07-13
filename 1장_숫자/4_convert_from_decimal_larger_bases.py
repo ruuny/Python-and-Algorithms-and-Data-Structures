@@ -10,7 +10,7 @@ def convert_from_decimal_larger_bases(number, base):
 def test_convert_from_decimal_larger_bases():
     number, base = 31, 16
     assert(convert_from_decimal_larger_bases(number, base) == "1F")
-    print("Tests passed!")
+    print("테스트 통과!")
 
 if __name__ == '__main__':
     test_convert_from_decimal_larger_bases()

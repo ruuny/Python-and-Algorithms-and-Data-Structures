@@ -27,7 +27,7 @@ def is_palindrome3(s):
         return False
 
 if __name__ == '__main__':
-    str1 = "subi no onibus"
+    str1 = "다시 합창 합시다"
     str2 = ""
     str3 = "hello"
     print(is_palindrome(str1))

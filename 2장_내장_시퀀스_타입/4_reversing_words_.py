@@ -27,6 +27,6 @@ def reversing_words_setence_logic(string1):
 
 
 if __name__ == '__main__':
-    str1 = "Buffy is a Vampire Slayer"
+    str1 = "파이썬 알고리즘 너무 재미있다"
     str2 = reversing_words_setence_logic(list(str1))
     print(str2)

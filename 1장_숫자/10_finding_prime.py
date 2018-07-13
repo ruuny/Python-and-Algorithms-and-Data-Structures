@@ -39,7 +39,7 @@ def test_finding_prime():
     assert(finding_prime_sqrt(number2) == False)
     assert(finding_prime_fermat(number1) == True)
     assert(finding_prime_fermat(number2) == False)
-    print('Tests passed!')
+    print("테스트 통과!")
     
 if __name__ == '__main__':
     test_finding_prime()

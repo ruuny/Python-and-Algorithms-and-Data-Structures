@@ -10,7 +10,7 @@ def reversing_words2(str1):
 
 
 if __name__ == '__main__':
-    str1 = "Buffy is a Vampire Slayer"
+    str1 = "파이썬 알고리즘 너무 재미있다"
     str2 = reversing_words(str1) 
     str3 = reversing_words2(str1)
     print(str2)

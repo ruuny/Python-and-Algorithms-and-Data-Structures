@@ -1,6 +1,5 @@
 from fractions import Fraction
 
-
 def rounding_floats(number1, places):
     return round(number1, places)
 
@@ -17,7 +16,7 @@ def get_numerator(number1, number2):
     a = Fraction(number1, number2)
     return a.numerator
 
-def test_testing_floats(module_name='this module'):
+def test_testing_floats():
     number1 = 1.25
     number2 = 1
     number3 = -1
@@ -28,9 +27,7 @@ def test_testing_floats(module_name='this module'):
     assert(float_to_fractions(number1) == number4)
     assert(get_denominator(number2, number6) == number6)
     assert(get_numerator(number2, number6) == number2)
-        
-    s = 'Tests in {name} have {con}!'
-    print(s.format(name=module_name, con='passed'))
+    print("테스트 통과!")
 
 if __name__ == '__main__':
     test_testing_floats()

@@ -5,13 +5,11 @@ def convert_dec_to_any_base_rec(number, base):
     else:
         return convert_dec_to_any_base_rec(number//base, base) + convertString[number%base] 
     
-def test_convert_dec_to_any_base_rec(module_name='this module'):
+def test_convert_dec_to_any_base_rec():
     number = 9
     base = 2
     assert(convert_dec_to_any_base_rec(number, base) == '1001')
-        
-    s = 'Tests in {name} have {con}!'
-    print(s.format(name=module_name, con='passed'))
+    print("테스트 통과!")
 
 if __name__ == '__main__':
     test_convert_dec_to_any_base_rec()
