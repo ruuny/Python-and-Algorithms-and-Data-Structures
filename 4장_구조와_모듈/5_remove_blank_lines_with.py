@@ -2,31 +2,18 @@ import sys
 
 def read_data(filename):
     lines = []
-    fh = None
-    try:
-        fh = open(filename)
+    with open(filename) as fh:
         for line in fh:
             if line.strip():
                 lines.append(line)
-    except (IOError, OSError) as err:
-        print(err)
-    finally:
-        if fh is not None:
-            fh.close()
     return lines
 
 def write_data(lines, filename):
     fh = None
-    try:
-        fh = open(filename, "w")
+    with open(filename, "w") as fh:
         for line in lines:
             fh.write(line)
-    except (EnvironmentError) as err:
-        print(err)
-    finally:
-        if fh is not None:
-            fh.close()
-
+    
 def remove_blank_lines():
     if len(sys.argv) < 2:
         print (f"Usage: {sys.argv[0]} infile1 [infile2...]")
