@@ -20,26 +20,26 @@ class Stack(object):
             self.head = node.pointer
             return node.value
         else:
-            print('Stack is empty.')
+            print("Stack is empty.")
 
     def peek(self):
         if self.head:
             return self.head.value
         else:
-            print('Stack is empty.')
+            print("Stack is empty.")
 
     def size(self):
         node = self.head
         count = 0
         while node:
-            count +=1
+            count += 1
             node = node.pointer
         return count
 
     def _printList(self):
         node = self.head
         while node:
-            print(node.value, end=' ')
+            print(node.value, end=" ")
             node = node.pointer
         print()
 
@@ -47,7 +47,7 @@ class Stack(object):
 if __name__ == '__main__':
     stack = Stack()
     print(f"스택이 비었나요? {stack.isEmpty()}")
-    print("스택에 0-9까지의 항목을 추가합니다.")
+    print("스택에 숫자 0~9를 추가합니다.")
     for i in range(10):
         stack.push(i)
     stack._printList()
