@@ -9,7 +9,7 @@ class LinkedListFIFO(object):
     # 헤드부터 각 노드의 값을 출력한다.
     def _printList(self):
         node = self.head
-        while node:
+        while node :
             print(node.value, end=" ")
             node = node.pointer
         print()
