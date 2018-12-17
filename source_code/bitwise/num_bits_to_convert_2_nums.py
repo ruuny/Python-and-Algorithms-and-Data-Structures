@@ -3,11 +3,11 @@
 __author__ = "bt3"
 
 
-''' This method returns the number of bits that are necessary to change to convert two
+""" This method returns the number of bits that are necessary to change to convert two
     numbers A and B:
     1) XOR
     2) count 1s
-'''
+"""
 
 def count_bits_swap2(a, b):
     count = 0
@@ -33,7 +33,7 @@ def count_1s(m):
     return count
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = int('10010000', 2)
     b = int('01011010', 2)
     print count_bits_swap(a, b)  #4

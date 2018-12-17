@@ -3,7 +3,7 @@
 __author__ = "bt3"
 
 
-''' Uses a stack to reverse a string '''
+""" Uses a stack to reverse a string """
 
 from stack import Stack
 
@@ -22,7 +22,7 @@ def reverse_string_with_stack(str1):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
   str1 = 'Buffy is a Slayer!'
   print(str1)
   print(reverse_string_with_stack(str1))

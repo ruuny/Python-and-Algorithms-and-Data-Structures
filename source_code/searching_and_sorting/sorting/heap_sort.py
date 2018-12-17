@@ -3,12 +3,12 @@
 __author__ = "bt3"
 
 
-''' Heapsort using Pythons libraries'''
+""" Heapsort using Pythons libraries"""
 
 import heapq
 
 def heap_sort1(seq):
-    ''' heap sort with Python's heapq '''
+    """ heap sort with Python's heapq """
     h = []
     for value in seq:
         heapq.heappush(h, value)
@@ -22,7 +22,7 @@ def test_heap_sort1():
 
 
 
-''' Heapsort using my Heap class '''
+""" Heapsort using my Heap class """
 
 from heap import Heap
 
@@ -42,7 +42,7 @@ def test_heap_sort2():
     print('Tests passed!')
 
 
-''' A third way of doing heap sort '''
+""" A third way of doing heap sort """
 
 def heap_sort3(seq):
     for start in range((len(seq)-2)//2, -1, -1):
@@ -78,7 +78,7 @@ def test_heap_sort3():
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_heap_sort1()
     test_heap_sort2()
     test_heap_sort3()

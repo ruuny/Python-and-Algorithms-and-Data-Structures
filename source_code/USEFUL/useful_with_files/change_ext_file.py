@@ -24,7 +24,7 @@ def change_file_ext():
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     change_file_ext()
 
 

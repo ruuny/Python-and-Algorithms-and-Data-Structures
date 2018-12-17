@@ -18,7 +18,7 @@ def reverse_str(_str):
     return result
     
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     _str = ''
     result = ''
     assert(reverse_str(_str) == result)

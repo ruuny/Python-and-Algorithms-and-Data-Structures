@@ -28,7 +28,7 @@ def palindrome_checker_with_deque(str1):
 
     return eq1, eq2
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     str1 = 'Madam Im Adam'
     str2 = 'Buffy is a Slayer'
     print(palindrome_checker_with_deque(str1))

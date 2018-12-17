@@ -51,7 +51,7 @@ class Stack(object):
         return '{}'.format(self.content)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     q = Stack()
 
     for i in range(15,20):

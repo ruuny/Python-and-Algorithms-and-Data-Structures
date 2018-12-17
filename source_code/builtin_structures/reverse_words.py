@@ -3,7 +3,6 @@
 __author__ = "bt3"
 
 
-
 def reversing_words(word):
     """
     >>> reversing_words('buffy is awesome')
@@ -11,7 +10,7 @@ def reversing_words(word):
     """
     new_word = []
 
-    words = word.split(' ')
+    words = word.split(" ")
     for word in words[::-1]:
         new_word.append(word)
 
@@ -24,7 +23,7 @@ def reversing_words2(s):
     'awesome is buffy'
     """
     words = s.split()
-    return ' '.join(reversed(words))
+    return " ".join(reversed(words))
 
 
 def reversing_words3(s):
@@ -32,14 +31,11 @@ def reversing_words3(s):
     >>> reversing_words('buffy is awesome')
     'awesome is buffy'
     """
-    words = s.split(' ')
+    words = s.split(" ")
     words.reverse()
-    return ' '.join(words)
+    return " ".join(words)
 
 
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
-

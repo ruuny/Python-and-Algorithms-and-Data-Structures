@@ -38,7 +38,7 @@ def test_searching_in_a_matrix():
     print('Tests passed!')
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_searching_in_a_matrix()
 
 

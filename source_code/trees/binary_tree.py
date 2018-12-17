@@ -79,7 +79,7 @@ class BT(object):
             return self.root._preorder()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     bt = BT()
     print "Adding nodes 1 to 10 in the tree..."

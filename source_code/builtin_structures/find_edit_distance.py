@@ -3,16 +3,16 @@
 __author__ = "bt3"
 
 
-''' computes the edit distance between two strings '''
+""" computes the edit distance between two strings """
 
 
 def find_edit_distance(str1, str2):
-    '''
+    """
     >>> s = 'sunday'
     >>> t = 'saturday'
     >>> find_edit_distance(s, t)
     3
-    '''
+    """
 
 	m = len(str1)
 	n = len(str2)
@@ -34,7 +34,7 @@ def find_edit_distance(str1, str2):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 

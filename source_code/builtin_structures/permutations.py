@@ -5,10 +5,10 @@ __author__ = "bt3"
 
 
 def perm(str1):
-    '''
+    """
     >>> perm('123')
     ['123', '132', '231', '213', '312', '321']
-    '''
+    """
 
     if len(str1) < 2:
         return str1
@@ -21,21 +21,21 @@ def perm(str1):
 
 
 def perm2(str1):
-    '''
+    """
     >>> perm2('123')
     ['123', '132', '213', '231', '312', '321']
-    '''
+    """
     from itertools import permutations
     return [''.join(p) for p in permutations(str1)]
 
 
 def ispermutation(s1, s2):
-    '''
+    """
     >>> ispermutation('231', '123')
     True
     >>> ispermutation('231', '153')
     False
-    '''
+    """
 
     from collections import Counter
     aux = Counter()
@@ -52,12 +52,12 @@ def ispermutation(s1, s2):
 
 
 def ispermutation2(s1, s2):
-    '''
+    """
     >>> ispermutation2('231', '123')
     True
     >>> ispermutation2('231', '153')
     False
-    '''
+    """
     if sorted(s1) == sorted(s2):
         return True
     else:
@@ -65,6 +65,6 @@ def ispermutation2(s1, s2):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

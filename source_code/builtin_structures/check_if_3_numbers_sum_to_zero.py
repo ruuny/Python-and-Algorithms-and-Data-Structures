@@ -3,18 +3,18 @@
 __author__ = "bt3"
 
 
-''' Determine if an Array of integers contains 3 numbers that sum to 0 '''
+""" Determine if an Array of integers contains 3 numbers that sum to 0 """
 
 from collections import defaultdict
 
 def find_3_number(array):
-    '''
+    """
     >>> find_3_number([1,5,56,11,-3,-12])
     1 11 -12
     True
     >>> find_3_number([] )
     False
-    '''
+    """
     hash_ = defaultdict()
     for i in array:
         hash_[i] = 1
@@ -30,7 +30,7 @@ def find_3_number(array):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 

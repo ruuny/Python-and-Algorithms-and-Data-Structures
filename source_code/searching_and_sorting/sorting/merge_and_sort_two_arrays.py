@@ -2,20 +2,20 @@
 
 __author__ = "bt3"
 
-'''
+"""
 You have two arrays with N integers in them. Merge those arrays using a
 recursive algorithm so that the integers in the final array are sorted.
-'''
+"""
 
 def merge_arrays(a1, a2):
-    '''
+    """
     >>> merge_arrays([5, 4, 3], [6, 2, 9])
     [2, 3, 4, 5, 6, 9]
     >>> merge_arrays([2, 6], [6, 2])
     [2, 2, 6, 6]
     >>> merge_arrays([], [])
     []
-    '''
+    """
     # if they are not sorted yet
     a1.sort()
     a2.sort()
@@ -40,7 +40,7 @@ def merge_arrays(a1, a2):
     return merge
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 

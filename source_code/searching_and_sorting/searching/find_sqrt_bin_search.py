@@ -2,7 +2,7 @@
 
 __author__ = "bt3"
 
-''' implement square root using binary search '''
+""" implement square root using binary search """
 
 
 def find_sqrt_bin_search(n, error=0.001):
@@ -26,7 +26,7 @@ def test_ind_sqrt_bin_search():
     print('Tests passed!')
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_ind_sqrt_bin_search()
 
 

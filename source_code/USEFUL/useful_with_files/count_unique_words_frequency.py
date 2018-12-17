@@ -11,5 +11,5 @@ def count_unique_word_freq():
             sys.stdin.read().lower().split()).most_common(n)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     count_unique_word_freq()

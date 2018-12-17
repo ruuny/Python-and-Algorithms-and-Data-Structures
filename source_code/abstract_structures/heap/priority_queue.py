@@ -5,7 +5,7 @@ __author__ = "bt3"
 import heapq
 
 class PriorityQueue(object):
-    ''' implements a priority queue class '''
+    """ implements a priority queue class """
     def __init__(self):
         self._queue = []
         self._index = 0 # comparying same priority level
@@ -26,7 +26,7 @@ class Item:
 
 
 def test_PriorityQueue():
-    ''' push and pop are all O(logN) '''
+    """ push and pop are all O(logN) """
     q = PriorityQueue()
     q.push(Item('test1'), 1)
     q.push(Item('test2'), 4)
@@ -34,7 +34,7 @@ def test_PriorityQueue():
     assert(str(q.pop()) == "Item('test2')")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_PriorityQueue()
 
 

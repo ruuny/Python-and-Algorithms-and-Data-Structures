@@ -4,9 +4,9 @@ __author__ = "bt3"
 
 
 
-'''
+"""
 Given a sorted array that was rotated, find an item with binary search:
-'''
+"""
 
 def find_element_rot_array(seq, key, lo=0, hi=None):
 
@@ -46,6 +46,6 @@ def test_find_element_rot_array():
     print("Tests passed!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_find_element_rot_array()
 

@@ -3,11 +3,11 @@
 __author__ = "bt3"
 
 
-
 from collections import defaultdict
 
+
 def is_palindrome(array):
-    '''
+    """
     >>> is_palindrome('subi no onibus')
     True
     >>> is_palindrome('helllo there')
@@ -16,8 +16,8 @@ def is_palindrome(array):
     True
     >>> is_palindrome('')
     True
-    '''
-    array = array.strip(' ')
+    """
+    array = array.strip(" ")
     if len(array) < 2:
         return True
 
@@ -27,7 +27,6 @@ def is_palindrome(array):
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
-

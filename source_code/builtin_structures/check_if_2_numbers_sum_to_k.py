@@ -20,13 +20,13 @@ It takes O(nlog n) times two.
 from collections import defaultdict, Counter
 
 def check_sum(array, k):
-    '''
+    """
     >>> check_sum([3, 2, 6, 7, 9, 1], 8)
     [(6, 2), (1, 7)]
     >>> check_sum([5, 2, 6, 7, 9, 1], 4)
     []
     >>>
-    '''
+    """
 
     dict = defaultdict()
     res = []
@@ -42,12 +42,12 @@ def check_sum(array, k):
 
 
 def check_sum2(array, k):
-    '''
+    """
     >>> check_sum2([1, 4, 2, 7, 1, 3, 10, 15, 3, 1], 6)
     set([(3, 3)])
     >>> check_sum2([1, 4, 2, 7, 1, 3, 10, 15, 3, 1], 0)
     set([])
-    '''
+    """
 
     dict = Counter()
     res = set()
@@ -66,6 +66,6 @@ def check_sum2(array, k):
 
     return res
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

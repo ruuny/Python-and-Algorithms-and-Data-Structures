@@ -24,7 +24,7 @@ def check_if_ransom_note(magazines, note):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     magazines1 = "avfegthhgrebvkdsvnijnvyijfdmckdsmovkmmfvskumvl;cdkmioswckofjbkreenyukjemjgnmkmvkmnvdkmvkr g gmvdvmldm vldfkmbldkmlvdkm"
     magazines2 = "adfsfa"

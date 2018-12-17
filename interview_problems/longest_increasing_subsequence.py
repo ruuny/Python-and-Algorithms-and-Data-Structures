@@ -17,7 +17,7 @@ def longest_increasing_subsequence(seq):
              
     
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     seq = [10, -12, 2, 3, -3, 5, -1, 2, -10]
     result = [-12, 2, 3]
     assert(longest_increasing_subsequence(seq) == result)

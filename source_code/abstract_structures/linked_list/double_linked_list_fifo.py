@@ -2,8 +2,8 @@
 
 __author__ = "bt3"
 
-''' Implement a double-linked list, which is very simple, we just need inherits
-from a Linked List Class and  add an attribute for previous.'''
+""" Implement a double-linked list, which is very simple, we just need inherits
+from a Linked List Class and  add an attribute for previous."""
 
 from linked_list_fifo import LinkedListFIFO
 
@@ -60,7 +60,7 @@ class dLinkList(LinkedListFIFO):
                 print('Node with index {} not found'.format(index))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     from collections import Counter
 

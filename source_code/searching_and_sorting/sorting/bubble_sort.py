@@ -23,6 +23,6 @@ def test_bubble_sort(module_name='this module'):
     assert(bubble_sort(seq) == sorted(seq))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_bubble_sort()
 

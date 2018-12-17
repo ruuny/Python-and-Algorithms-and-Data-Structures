@@ -4,7 +4,8 @@ def fib_generator():
         yield b
         a, b = b, a+b
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     fib = fib_generator()
     print(next(fib))
     print(next(fib))

@@ -49,6 +49,6 @@ def remove_blank_lines():
             write_data(lines, filename)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     remove_blank_lines()
 

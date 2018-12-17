@@ -9,12 +9,12 @@ class BunchClass(dict):
 
 
 def main():
-    ''' {'right': {'right': 'Xander', 'left': 'Willow'}, 'left': {'right': 'Angel', 'left': 'Buffy'}}'''
+    """ {'right': {'right': 'Xander', 'left': 'Willow'}, 'left': {'right': 'Angel', 'left': 'Buffy'}}"""
     bc = BunchClass     # notice the absence of ()
     tree = bc(left = bc(left="Buffy", right="Angel"), right = bc(left="Willow", right="Xander"))
     print(tree)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
      main()
 
 

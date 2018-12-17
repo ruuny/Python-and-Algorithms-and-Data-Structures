@@ -41,7 +41,7 @@ class Queue(object):
         return not (bool(self.in_stack) or bool(self.out_stack))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     queue = Queue()
     print(f"큐가 비었나요? {queue.isEmpty()}")
     print("큐에 숫자 0~9를 추가합니다.")

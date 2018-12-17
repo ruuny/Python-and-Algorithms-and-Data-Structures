@@ -31,7 +31,7 @@ class Stack(object):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     q = Stack()
 
     for i in range(10):

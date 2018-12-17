@@ -1,5 +1,6 @@
 from node import Node
 
+
 class LinkedListLIFO(object):
     def __init__(self):
         self.head = None
@@ -9,7 +10,7 @@ class LinkedListLIFO(object):
     def _printList(self):
         node = self.head
         while node:
-            print(node.value, end=' ')
+            print(node.value, end=" ")
             node = node.pointer
         print()
 
@@ -67,7 +68,8 @@ class LinkedListLIFO(object):
         else:
             print(f"값 {value}에 해당하는 노드가 없습니다.")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     ll = LinkedListLIFO()
     for i in range(1, 5):
         ll._add(i)

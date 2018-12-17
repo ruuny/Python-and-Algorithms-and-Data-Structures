@@ -3,17 +3,17 @@
 __author__ = "bt3"
 
 
-'''
+"""
 given a string, find longest string with unique characters
-'''
+"""
 
 def find_longest(string):
-    '''
+    """
     >>> find_longest('abfgrhgtrdsandwejfhdasjcbdsjvrejwghireeej')
     'wejfhdas'
     >>> find_longest('abcabcabcabcdefabcccc')
     'defabc'
-    '''
+    """
     maxs = ''
     result = ''
 
@@ -32,7 +32,7 @@ def find_longest(string):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 

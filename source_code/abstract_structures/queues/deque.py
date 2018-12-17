@@ -2,7 +2,7 @@
 
 __author__ = "bt3"
 
-''' a class for a double ended queue (also inefficient) '''
+""" a class for a double ended queue (also inefficient) """
 
 from queue import Queue
 
@@ -16,7 +16,7 @@ class Deque(Queue):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     queue = Deque()
     print("Is the queue empty? ", queue.isEmpty())
     print("Adding 0 to 10 in the queue...")

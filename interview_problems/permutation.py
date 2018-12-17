@@ -17,7 +17,7 @@ def permutation(array):
     
     
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     word = 'abc'
     result = ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
     assert(permutation(word) == result)

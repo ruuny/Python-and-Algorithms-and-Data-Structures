@@ -2,7 +2,7 @@
 
 __author__ = "bt3"
 
-''' A class for a linked list that has the nodes in a FIFO order (such as a queue)'''
+""" A class for a linked list that has the nodes in a FIFO order (such as a queue)"""
 
 
 from node import Node
@@ -72,7 +72,7 @@ class LinkedListFIFO(object):
                 print('Node with index {} not found'.format(index))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ll = LinkedListFIFO()
     for i in range(1, 5):
         ll.addNode(i)

@@ -5,12 +5,12 @@ __author__ = "bt3"
 from collections import Counter
 
 def  find_non_rep_char(s1):
-  '''
+  """
   >>> s1 = 'aabbcceff'
   >>> find_non_rep_char(s1)
   e
   >>> find_non_rep_char('ccc')
-  '''
+  """
 
   aux_dict = Counter()
 
@@ -23,7 +23,7 @@ def  find_non_rep_char(s1):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 

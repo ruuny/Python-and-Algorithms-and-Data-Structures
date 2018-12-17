@@ -49,7 +49,7 @@ class LinkedQueue(object):
         print()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     queue = LinkedQueue()
     print(f"큐가 비었나요? {queue.isEmpty()}")
     print("큐에 숫자 0~9를 추가합니다.")

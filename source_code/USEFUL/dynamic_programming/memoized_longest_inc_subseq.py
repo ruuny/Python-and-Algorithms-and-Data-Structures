@@ -8,7 +8,7 @@ from memo import memo
 from do_benchmark import benchmark
 
 def naive_longest_inc_subseq(seq):
-    ''' naive (exponential) solution to the longest increasing subsequence problem '''
+    """ naive (exponential) solution to the longest increasing subsequence problem """
     for length in range(len(seq), 0, -1):
         for sub in combinations(seq, length):
             if list(sub) == sorted(sub):
@@ -16,7 +16,7 @@ def naive_longest_inc_subseq(seq):
 
 
 def longest_inc_subseq1(seq):
-    ''' an iterative algorithm for the longest increasing subsequence problem '''
+    """ an iterative algorithm for the longest increasing subsequence problem """
     end = []
     for val in seq:
         idx = bisect(end, val)
@@ -26,7 +26,7 @@ def longest_inc_subseq1(seq):
 
 
 def longest_inc_subseq2(seq):
-    ''' another iterative algorithm for the longest increasing subsequence problem '''
+    """ another iterative algorithm for the longest increasing subsequence problem """
     L = [1] * len(seq)
     for cur, val in enumerate(seq):
         for pre in range(cur):
@@ -36,7 +36,7 @@ def longest_inc_subseq2(seq):
 
 
 def memoized_longest_inc_subseq(seq):
-    ''' a memoized recursive solution to find the longest increasing subsequence problem '''
+    """ a memoized recursive solution to find the longest increasing subsequence problem """
     @memo
     def L(cur):
         res = 1
@@ -64,7 +64,7 @@ def test_memoized_longest_inc_subseq():
     print(memoized_longest_inc_subseq(s1))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from random import randrange
     s1 = [randrange(100) for i in range(25)]
     print(s1)

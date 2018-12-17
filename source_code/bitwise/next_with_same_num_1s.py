@@ -3,12 +3,12 @@
 __author__ = "bt3"
 
 
-''' Give a positive int, print the next smallest and next largest ints with
+""" Give a positive int, print the next smallest and next largest ints with
     same number of 1 bits.
     The brute force is:
     1) find number of 1 bits
     2) loop above and down until find same, checking for each
-'''
+"""
 
 
 
@@ -50,7 +50,7 @@ def find_num_1s(num):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     num = 0b1001
     n = '0b1010'
     p = '0b110'

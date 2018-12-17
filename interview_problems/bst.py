@@ -145,7 +145,7 @@ def inorder(tree, nodes=None):
 
         
         
-if __name__ == '__main__':
+if __name__ == "__main__":
     bst = BST()
     l = [10, 5, 6, 3, 8, 2, 1, 11, 9, 4]
     for i in l:

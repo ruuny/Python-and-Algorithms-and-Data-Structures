@@ -24,5 +24,5 @@ def count_unique_word_file():
         print("'{0}' occurs {1} times.".format(word, words[word]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     count_unique_word_file()

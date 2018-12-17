@@ -2,7 +2,7 @@
 
 __author__ = "bt3"
 
-'''To use timeit you create a Timer object whose parameters are two Python
+"""To use timeit you create a Timer object whose parameters are two Python
 statements. The first parameter is a Python statement that you want to time;
 the second parameter is a statement that will run once to set up the test.
 The timeit module will then time how long it takes to execute the statement
@@ -13,14 +13,14 @@ statement a million times you can read the result as the number of
 microseconds to execute the test one time. You can also pass timeit a
 named parameter called number that allows you to specify how many times the
 test statement is executed. The following session shows how long it takes to
-run each of our test functions 1000 times. '''
+run each of our test functions 1000 times. """
 
 
 import timeit
 import random
 
 for i in range(10000,1000001,20000):
-    ''' this experiment confirm that the contains operator for lists is O(n) and for dict is O(1) '''
+    """ this experiment confirm that the contains operator for lists is O(n) and for dict is O(1) """
     t = timeit.Timer("random.randrange(%d) in x"%i, "from __main__ import random,x")
     x = list(range(i))
     lst_time = t.timeit(number=1000)

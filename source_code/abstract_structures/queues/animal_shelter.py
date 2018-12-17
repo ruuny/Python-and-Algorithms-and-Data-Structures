@@ -94,7 +94,7 @@ class AnimalShelter(object):
             dogs = dogs.pointer
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     qs = AnimalShelter()
     qs.enqueue('bob', 'cat')

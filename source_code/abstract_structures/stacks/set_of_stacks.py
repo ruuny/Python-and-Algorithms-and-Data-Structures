@@ -40,7 +40,7 @@ class SetOfStacks(Stack):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     capacity = 5
     stack = SetOfStacks(capacity)
     print("Is the stack empty? ", stack.isEmpty())

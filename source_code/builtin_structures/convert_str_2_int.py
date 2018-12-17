@@ -4,7 +4,7 @@ __author__ = "bt3"
 
 
 def conv_int2str(int1):
-    '''
+    """
     >>> conv_str2int('367')
     367
     >>> conv_str2int('0')
@@ -13,7 +13,7 @@ def conv_int2str(int1):
     -10
     >>> conv_str2int('1e5')
     100000
-    '''
+    """
 
     aux_dict = {key:value for key in range(10) for value in '0123456789'[key]}
 
@@ -41,7 +41,7 @@ def conv_int2str(int1):
 
 
 def conv_str2int(str1):
-    '''
+    """
     >>> conv_int2str(0)
     '0'
     >>> conv_int2str(1e5)
@@ -50,7 +50,7 @@ def conv_str2int(str1):
     '367'
     >>> conv_int2str(-10)
     '-10'
-    '''
+    """
     if not str1:
         return None
 
@@ -77,7 +77,7 @@ def conv_str2int(str1):
     return result*sign
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 

@@ -31,7 +31,7 @@ class Queue(object):
         return not (self.enq + self.deq)
 
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     q = Queue()
     for i in range(1,11):
         q.enqueue(i)

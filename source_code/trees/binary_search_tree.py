@@ -99,7 +99,7 @@ class BST(object):
             return 'Tree is empty.'
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     bst = BST()
     print "Adding nodes 1 to 10 in the tree..."

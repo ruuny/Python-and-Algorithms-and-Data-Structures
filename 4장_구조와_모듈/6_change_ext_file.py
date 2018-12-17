@@ -2,12 +2,13 @@ import os
 import sys
 import shutil
 
+
 def change_file_ext():
     if len(sys.argv) < 2:
         print(f"Usage: {sys.argv[0]} filename.old_ext 'new_ext'")
         sys.exit()
 
-    name = os.path.splitext(sys.argv[1])[0] + "." + sys.argv[2] 
+    name = os.path.splitext(sys.argv[1])[0] + "." + sys.argv[2]
     print(name)
 
     try:
@@ -15,5 +16,6 @@ def change_file_ext():
     except OSError as err:
         print(err)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     change_file_ext()

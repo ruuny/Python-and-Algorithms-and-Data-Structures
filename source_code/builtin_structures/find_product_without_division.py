@@ -2,17 +2,17 @@
 
 __author__ = "bt3"
 
-'''Given an array of numbers, replace each number with the product of all
+"""Given an array of numbers, replace each number with the product of all
 the numbers in the array except the number itself *without* using division
-'''
+"""
 
 
 def find_product_without_division(seq):
-    '''
+    """
     >>> seq = [2,3,4]
     >>> find_product_without_division(seq)
     [12, 8, 6]
-    '''
+    """
 
     forw = []
     bacw = []
@@ -37,6 +37,6 @@ def find_product_without_division(seq):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

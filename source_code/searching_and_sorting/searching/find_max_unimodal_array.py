@@ -27,7 +27,7 @@ def test_find_max_unimodal_array():
     print('Tests passed!')
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_find_max_unimodal_array()
 
 

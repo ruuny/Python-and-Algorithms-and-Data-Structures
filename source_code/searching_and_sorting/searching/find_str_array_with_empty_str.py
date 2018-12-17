@@ -3,12 +3,12 @@
 __author__ = "bt3"
 
 
-''' Given a sorted an array with empty strings,
+""" Given a sorted an array with empty strings,
     we use binary search to find some string (since the list is sorted):
     --> we deal with the empty strings with strip and then run to left
     and right, or move mid to the closed non-empty str (remember that
     the index must be conserved):
-'''
+"""
 
 
 def find_str_array_with_empty_str(seq, s1):
@@ -50,5 +50,5 @@ def test_find_str_array_with_empty_str():
     print('Tests passed!')
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_find_str_array_with_empty_str()

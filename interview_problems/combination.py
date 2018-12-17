@@ -18,7 +18,7 @@ def combination(array):
     
     
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     array = ['a', 'b', 'c']
     result = set(['a', 'ac', 'ab', 'abc', 'bc', 'c', 'b']) 
     assert(combination(array) == result)

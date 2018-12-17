@@ -33,6 +33,6 @@ def test_setdef(module_name='this module'):
     print(s.format(name=module_name, con='passed'))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_setdef()
 

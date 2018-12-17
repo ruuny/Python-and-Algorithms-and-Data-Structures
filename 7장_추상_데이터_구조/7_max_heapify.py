@@ -3,9 +3,9 @@ class Heapify(object):
         self.data = data or []
         for i in range(len(data)//2, -1, -1):
             self.__max_heapify__(i)
-    
+
     def __repr__(self):
-        return (f"{self.data}")
+        return (f'{self.data}')
 
     def parent(self, i):
         return i >> 1
@@ -15,14 +15,15 @@ class Heapify(object):
 
     def right_child(self, i):
         return (i << 1) + 2
- 
+
     def __max_heapify__(self, i):
         largest = i
         left = self.left_child(i)
         right = self.right_child(i)
-        n = len(self.data) 
+        n = len(self.data)
         largest = (left < n and self.data[left] > self.data[i]) and left or i
-        largest = (right < n and self.data[right] > self.data[largest]) and right or largest
+        largest = (right < n and self.data[right]
+                   > self.data[largest]) and right or largest
         if i is not largest:
             self.data[i], self.data[largest] = self.data[largest], self.data[i]
             self.__max_heapify__(largest)
@@ -40,7 +41,8 @@ def test_heapify():
     l1 = [3, 2, 5, 1, 7, 8, 2]
     h = Heapify(l1)
     assert(h.extract_max() == 8)
-    print ("테스트 통과!")
+    print('테스트 통과!')
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     test_heapify()

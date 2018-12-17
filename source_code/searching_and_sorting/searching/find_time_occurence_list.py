@@ -46,6 +46,6 @@ def test_find_time_occurrence_list():
     print('Tests passed!')
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_find_time_occurrence_list()
 

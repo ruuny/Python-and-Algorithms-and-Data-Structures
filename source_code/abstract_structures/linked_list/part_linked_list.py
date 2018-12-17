@@ -2,8 +2,8 @@
 
 __author__ = "bt3"
 
-''' This function divides a linked list in a value, where everything smaller than this value
-    goes to the front, and everything large goes to the back:'''
+""" This function divides a linked list in a value, where everything smaller than this value
+    goes to the front, and everything large goes to the back:"""
 
 
 from linked_list_fifo import LinkedListFIFO
@@ -40,7 +40,7 @@ def partList(ll, n):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     ll = LinkedListFIFO()
     l = [6, 7, 3, 4, 9, 5, 1, 2, 8]

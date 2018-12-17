@@ -101,7 +101,7 @@ class LinkedListFIFO(object):
                 print(f"값 {value}에 해당하는 노드가 없습니다.")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ll = LinkedListFIFO()
     for i in range(1, 5):
         ll.addNode(i)

@@ -8,7 +8,7 @@ def sumOfN2(n):
     end = time.time()
     return theSum, end-start
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = 5
     print("총 합계: %d\t 시간: %10.7f초" % sumOfN2(n))
     n = 200

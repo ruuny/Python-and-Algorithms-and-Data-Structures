@@ -2,7 +2,7 @@
 
 __author__ = "bt3"
 
-'''To use timeit you create a Timer object whose parameters are two Python statements. The first parameter is a Python statement that you want to time; the second parameter is a statement that will run once to set up the test. The timeit module will then time how long it takes to execute the statement some number of times. By default timeit will try to run the statement one million times. When its done it returns the time as a floating point value representing the total number of seconds. However, since it executes the statement a million times you can read the result as the number of microseconds to execute the test one time. You can also pass timeit a named parameter called number that allows you to specify how many times the test statement is executed. The following session shows how long it takes to run each of our test functions 1000 times. '''
+"""To use timeit you create a Timer object whose parameters are two Python statements. The first parameter is a Python statement that you want to time; the second parameter is a statement that will run once to set up the test. The timeit module will then time how long it takes to execute the statement some number of times. By default timeit will try to run the statement one million times. When its done it returns the time as a floating point value representing the total number of seconds. However, since it executes the statement a million times you can read the result as the number of microseconds to execute the test one time. You can also pass timeit a named parameter called number that allows you to specify how many times the test statement is executed. The following session shows how long it takes to run each of our test functions 1000 times. """
 
 
 def test1():
@@ -23,7 +23,7 @@ def test4():
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import timeit
     t1 = timeit.Timer("test1()", "from __main__ import test1")
     print("concat ",t1.timeit(number=1000), "milliseconds")

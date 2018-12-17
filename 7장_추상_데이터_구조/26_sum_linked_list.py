@@ -50,7 +50,7 @@ def sumlls(l1, l2):
     return lsum
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     l1 = LinkedListFIFOYield() # 2671
     l1.addNode(1)
     l1.addNode(7)

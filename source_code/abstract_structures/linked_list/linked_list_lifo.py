@@ -3,7 +3,7 @@
 __author__ = "bt3"
 
 
-''' Implement a unordered linked list, i.e. a LIFO linked list (like a stack) '''
+""" Implement a unordered linked list, i.e. a LIFO linked list (like a stack) """
 
 from node import Node
 
@@ -69,7 +69,7 @@ class LinkedListLIFO(object):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ll = LinkedListLIFO()
     for i in range(1, 5):
         ll._add(i)

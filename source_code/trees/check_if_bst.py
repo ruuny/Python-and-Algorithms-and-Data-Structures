@@ -48,7 +48,7 @@ def isBST_other_method(node, max_node=None, min_node=None):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     bt = BST()
     for i in range(1, 10):
         bt.add(i)

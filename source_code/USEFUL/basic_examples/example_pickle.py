@@ -53,6 +53,6 @@ def test_export_pickle():
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_export_pickle()
     test_import_pickle()

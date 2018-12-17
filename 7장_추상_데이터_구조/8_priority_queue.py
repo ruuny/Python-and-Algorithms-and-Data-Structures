@@ -20,7 +20,7 @@ class Item:
         return f"Item({self.name!r})"
 
 def test_priority_queue():
-    ''' push와 pop은 모두 O(logN)이다. '''
+    """ push와 pop은 모두 O(logN)이다. """
     q = PriorityQueue()
     q.push(Item('test1'), 1)
     q.push(Item('test2'), 4)
@@ -28,5 +28,5 @@ def test_priority_queue():
     assert(str(q.pop()) == "Item('test2')")
     print('테스트 통과!')
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_priority_queue()

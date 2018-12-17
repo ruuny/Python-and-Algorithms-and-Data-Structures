@@ -29,7 +29,7 @@ def test_sets_operations_with_lists():
     print('Tests passed!')
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_sets_operations_with_lists()
 
 

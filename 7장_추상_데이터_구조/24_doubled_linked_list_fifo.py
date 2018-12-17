@@ -52,7 +52,7 @@ class DLinkedList(LinkedListFIFO):
                 print(f"인덱스 {index}에 해당하는 노드가 없습니다.")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from collections import Counter
 
     ll = DLinkedList()

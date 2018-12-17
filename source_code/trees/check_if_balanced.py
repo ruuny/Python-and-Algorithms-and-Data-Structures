@@ -17,7 +17,7 @@ def isBalanced(node, left=0, right=0):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     bt = BST()
     for i in range(1, 10):
         bt.add(i)

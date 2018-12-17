@@ -2,9 +2,9 @@
 
 __author__ = "bt3"
 
-''' Supposing two linked lists representing numbers, such that in each of their
+""" Supposing two linked lists representing numbers, such that in each of their
     nodes they carry one digit. This function sums the two numbers that these
-    two linked lists represent, returning a third list representing the sum:'''
+    two linked lists represent, returning a third list representing the sum:"""
 
 
 from linked_list_fifo import LinkedListFIFO
@@ -67,7 +67,7 @@ def sumlls(l1, l2):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     l1 = LinkedListFIFOYield() # 2671
     l1.addNode(1)
     l1.addNode(7)

@@ -2,9 +2,9 @@
 
 __author__ = "bt3"
 
-'''
+"""
 given 2 dice, determine number of ways to sum S if all dice are rolled
-'''
+"""
 
 from collections import Counter, defaultdict
 
@@ -27,6 +27,6 @@ def find_dice_probabilities(S=5, n_faces=6):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     results = find_dice_probabilities()
     assert(results[0] == len(results[1]))

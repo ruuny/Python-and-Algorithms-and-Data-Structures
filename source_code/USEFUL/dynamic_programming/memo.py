@@ -7,7 +7,7 @@ from functools import wraps
 from do_benchmark import benchmark
 
 def memo(func):
-    ''' an example of dynamic programming using a memoizing decorator '''
+    """ an example of dynamic programming using a memoizing decorator """
     cache = {}
     @wraps(func)
     def wrap(*args):
@@ -18,7 +18,7 @@ def memo(func):
 
 @memo
 def find_fibonacci_seq_rec(n):
-    ''' implements the nth fibonacci value in a recursive exponential runtime '''
+    """ implements the nth fibonacci value in a recursive exponential runtime """
     if n < 2: return n
     return find_fibonacci_seq_rec(n - 1) + find_fibonacci_seq_rec(n - 2)
 
@@ -29,7 +29,7 @@ def test_memo():
     print(find_fibonacci_seq_rec(n))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_memo()
 
 

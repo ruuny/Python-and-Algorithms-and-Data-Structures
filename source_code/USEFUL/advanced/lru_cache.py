@@ -13,6 +13,6 @@ def fib(n):
     return fib(n-1) + fib(n-2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print([fib(n) for n in range(10)])
     print(fib.cache_info())

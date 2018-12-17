@@ -2,7 +2,7 @@
 
 __author__ = "bt3"
 
-''' A stack with a minimum lookup '''
+""" A stack with a minimum lookup """
 
 from stack import Stack
 
@@ -50,7 +50,7 @@ class StackMin(Stack):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     stack = StackMin()
     print("Is the stack empty? ", stack.isEmpty())
     print("Adding 0 to 10 in the stack...")

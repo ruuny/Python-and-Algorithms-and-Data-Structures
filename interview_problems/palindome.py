@@ -31,7 +31,7 @@ def check_if_palindrome_iter(array):
     return True
     
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     sentence = 'hello there'
     array = sanitize(sentence)
     assert(check_if_palindrome(array) == False)

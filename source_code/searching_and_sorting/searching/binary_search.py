@@ -4,7 +4,7 @@ __author__ = "bt3"
 
 
 def binary_search(array, item, hi=None, lo=0):
-    '''
+    """
     >>> binary_search([2,3,5,6,8,10,15,23], 15)
     6
     >>> binary_search([2,3,5,6,8,10,15,23], 4)
@@ -13,7 +13,7 @@ def binary_search(array, item, hi=None, lo=0):
     6
     >>> binary_search([1,3,4,5,7,8 ,10,12,23], 22)
     False
-    '''
+    """
 
     hi = hi or len(array)
     if hi < lo:
@@ -31,7 +31,7 @@ def binary_search(array, item, hi=None, lo=0):
 
 
 def binary_search_iter(array, item):
-    '''
+    """
     >>> binary_search_iter([2,3,5,6,8,10,15,23], 15)
     6
     >>> binary_search_iter([2,3,5,6,8,10,15,23], 4)
@@ -40,7 +40,7 @@ def binary_search_iter(array, item):
     6
     >>> binary_search_iter([1,3,4,5,7,8 ,10,12,23], 22)
     False
-    '''
+    """
     lo, hi = 0, len(array)
 
     while lo < hi:
@@ -60,7 +60,7 @@ def binary_search_iter(array, item):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 

@@ -56,7 +56,7 @@ class Stack(object):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     stack = Stack()
     print("Is the stack empty? ", stack.isEmpty())
     print("Adding 0 to 10 in the stack...")

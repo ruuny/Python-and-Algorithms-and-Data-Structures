@@ -59,7 +59,7 @@ def inorder(tree, nodes=None):
     return nodes
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
 
     # bt

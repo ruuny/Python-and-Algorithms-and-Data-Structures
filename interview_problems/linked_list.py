@@ -47,7 +47,7 @@ class LinkedList(object):
 
     
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ll = LinkedList()
     for i in range(1, 5):
         ll._add(i)

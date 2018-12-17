@@ -12,7 +12,7 @@ def largest(node):
     return node.item
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
 
     bst = BST()

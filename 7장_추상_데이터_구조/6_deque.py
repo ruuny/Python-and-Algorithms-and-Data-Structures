@@ -9,7 +9,7 @@ class Deque(Queue):
         return self.items.pop(0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     deque = Deque()
     print(f"데크(Deque)가 비었나요? {deque.isEmpty()}")
     print("데크에 숫자 0~9를 추가합니다.")

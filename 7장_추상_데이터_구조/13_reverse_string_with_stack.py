@@ -12,7 +12,7 @@ def reverse_string_with_stack(str1):
 
   return revStr
 
-if __name__ == '__main__':
+if __name__ == "__main__":
   str1 = '버피는 천사다.'
   print(str1)
   print(reverse_string_with_stack(str1))

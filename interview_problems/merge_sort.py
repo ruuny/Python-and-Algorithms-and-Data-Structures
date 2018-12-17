@@ -35,7 +35,7 @@ def merge_sort(array):
     
     
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     array = [3, 1, 6, 0, 7, 19, 7, 2, 22]
     sorted = [0, 1, 2, 3, 6, 7, 7, 19, 22]
     assert(merge_sort(array) == sorted)

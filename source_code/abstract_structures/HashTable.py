@@ -31,7 +31,7 @@ class HashTable(object):
         else:
             return False
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     dic = HashTable(5)
     for i in range(1, 40, 2):
         dic.add_item(i)

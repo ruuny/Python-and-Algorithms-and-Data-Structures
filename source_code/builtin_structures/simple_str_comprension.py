@@ -6,13 +6,13 @@ __author__ = "bt3"
 from collections import Counter
 
 def str_comp(s):
-    '''
+    """
     >>> s1 = 'aabcccccaaa'
     >>> str_comp(s1)
     'a2b1c5a3'
     >>> str_comp('')
     ''
-    '''
+    """
 
     count, last = 1, ''
     list_aux = []
@@ -29,6 +29,6 @@ def str_comp(s):
     return ''.join(list_aux)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

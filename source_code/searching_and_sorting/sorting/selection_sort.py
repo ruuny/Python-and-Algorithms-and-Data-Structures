@@ -4,7 +4,7 @@ __author__ = "bt3"
 
 
 def selection_sort(seq):
-    ''' sort a sequence using the selection sort alg '''
+    """ sort a sequence using the selection sort alg """
     for i in range(len(seq) -1, 0, -1):
         max_j = i
         for j in range(max_j):
@@ -19,7 +19,7 @@ def test_selection_sort():
     assert(selection_sort(seq) == sorted(seq))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_selection_sort()
 
 

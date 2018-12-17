@@ -7,6 +7,7 @@ def reverser(string1, p1=0, p2=None):
         p1 += 1
         p2 -= 1
 
+
 def reversing_words_setence_logic(string1):
     # 먼저, 문장 전체를 반전한다.
     reverser(string1)
@@ -26,7 +27,7 @@ def reversing_words_setence_logic(string1):
     return ''.join(string1)
 
 
-if __name__ == '__main__':
-    str1 = "파이썬 알고리즘 너무 재미있다"
+if __name__ == "__main__":
+    str1 = "파이썬 알고리즘 정말 재미있다"
     str2 = reversing_words_setence_logic(list(str1))
     print(str2)

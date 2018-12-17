@@ -4,7 +4,7 @@ __author__ = "bt3"
 
 
 def gnome_sort(seq):
-    ''' sort a sequence using the gnome sort alg '''
+    """ sort a sequence using the gnome sort alg """
     i = 0
     while i < len(seq):
         if i ==0 or seq[i-1] <= seq[i]:
@@ -20,7 +20,7 @@ def test_gnome_sort():
     assert(gnome_sort(seq) == sorted(seq))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_gnome_sort()
 
 

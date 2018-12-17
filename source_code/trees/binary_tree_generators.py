@@ -126,7 +126,7 @@ class BT(object):
             return 'Tree is empty.'
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     tree = BT()
 
     for i in range(1, 11):

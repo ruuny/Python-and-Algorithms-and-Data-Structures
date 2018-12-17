@@ -3,9 +3,9 @@
 __author__ = "bt3"
 
 
-''' implement a function to see whether a linked list is circular.
+""" implement a function to see whether a linked list is circular.
     To implement this, we just need two pointers with different
-    paces (for example, one goes twice faster)'''
+    paces (for example, one goes twice faster)"""
 
 from linked_list_fifo import LinkedListFIFO
 from node import Node
@@ -39,7 +39,7 @@ def isCircularll(ll):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     ll = LinkedListFIFO()
     for i in range(10):

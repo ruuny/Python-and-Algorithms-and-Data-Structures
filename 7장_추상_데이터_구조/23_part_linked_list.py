@@ -29,7 +29,7 @@ def partList(ll, n):
     return less
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ll = LinkedListFIFO()
     l = [6, 7, 3, 4, 9, 5, 1, 2, 8]
     for i in l:

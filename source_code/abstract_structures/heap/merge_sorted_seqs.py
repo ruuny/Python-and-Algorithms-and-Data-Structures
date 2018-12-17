@@ -6,8 +6,8 @@ import heapq
 
 
 def merge_sorted_seq(seq1, seq2):
-    ''' merge two sorted sequences with little ovehead. the result
-        will be sorted, which is different of doing just +'''
+    """ merge two sorted sequences with little ovehead. the result
+        will be sorted, which is different of doing just +"""
     result = []
     for c in heapq.merge(seq1, seq2):
         result.append(c)
@@ -22,6 +22,6 @@ def test_merge_sorted_seq(module_name='this module'):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_merge_sorted_seq()
 

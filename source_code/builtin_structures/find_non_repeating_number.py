@@ -7,12 +7,12 @@ from collections import defaultdict
 
 
 def find_unique_number(array):
-    '''
+    """
     >>> find_unique_number([1, 3, 6, 1, 5, 6, 9, 3, 7])
     [1, 6, 3]
     >>> find_unique_number([1, 3, 5, 6, 9, 7])
     []
-    '''
+    """
 
     table = defaultdict()
     total = []
@@ -28,6 +28,6 @@ def find_unique_number(array):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

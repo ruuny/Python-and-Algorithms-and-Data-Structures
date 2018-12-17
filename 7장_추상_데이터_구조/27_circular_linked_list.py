@@ -40,5 +40,5 @@ def test_isCircularll():
     print("테스트 통과!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_isCircularll()

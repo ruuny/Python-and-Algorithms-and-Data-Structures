@@ -34,7 +34,7 @@ def binary_search_rec(array, value, first=0, last=None):
         return binary_search_rec(array, value, first=mid, last=last)
 
     
-if __name__ == '__main__':    
+if __name__ == "__main__":    
     array = [3, 4, 6, 7, 10, 11, 34, 67, 84]
     value = 6
     assert(binary_search(array, value) == True)   

@@ -22,6 +22,6 @@ def gen2():
     for c in reverse('awesome'):
         print c
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     gen1()
     gen2()

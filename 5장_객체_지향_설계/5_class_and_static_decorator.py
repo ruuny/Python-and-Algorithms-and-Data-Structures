@@ -5,12 +5,13 @@ class A(object):
     @classmethod
     def class_foo(cls, x):
         print(f"class_foo({cls}, {x}) 실행")
-        
+
     @staticmethod
     def static_foo(x):
         print(f"static_foo({x}) 실행")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     a = A()
     a.foo(1)
     a.class_foo(2)

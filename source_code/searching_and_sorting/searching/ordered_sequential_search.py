@@ -5,8 +5,8 @@ __author__ = "bt3"
 
 
 def ordered_sequential_search(seq, n):
-    ''' an example of sequential search in an ordered seq:
-        it improves the performance if the item is not present  '''
+    """ an example of sequential search in an ordered seq:
+        it improves the performance if the item is not present  """
     item = 0
     for item in seq:
         if item > n: return False
@@ -25,7 +25,7 @@ def test_ordered_sequential_search(module_name='this module'):
     print(s.format(name=module_name, con='passed'))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_ordered_sequential_search()
 
 

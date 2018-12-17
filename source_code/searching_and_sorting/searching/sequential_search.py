@@ -4,7 +4,7 @@ __author__ = "bt3"
 
 
 def sequential_search(seq, n):
-    ''' an example of sequential search (for items stored in a collection) '''
+    """ an example of sequential search (for items stored in a collection) """
     for item in seq:
         if item == n: return True
     return False
@@ -21,7 +21,7 @@ def test_sequential_search(module_name='this module'):
     print(s.format(name=module_name, con='passed'))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_sequential_search()
 
 

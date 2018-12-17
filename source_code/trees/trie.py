@@ -3,9 +3,9 @@
 __author__ = "bt3"
 
 
-'''
+"""
 Implement a trie. (Write the API and code for inserting into a trie).
-'''
+"""
 
 def make_trie(*args):
     trie = {}
@@ -47,7 +47,7 @@ def remove_from_trie(trie, word, depth):
     return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     trie = make_trie('hello', 'abc', 'baz', 'bar', 'barz')
     print 'This is the trie:'
     print trie

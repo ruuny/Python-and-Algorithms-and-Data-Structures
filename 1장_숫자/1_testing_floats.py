@@ -1,20 +1,25 @@
 from fractions import Fraction
 
+
 def rounding_floats(number1, places):
     return round(number1, places)
+
 
 def float_to_fractions(number):
     return Fraction(*number.as_integer_ratio())
 
-# 분모를 반환한다.
-def get_denominator(number1, number2):
-    a = Fraction(number1, number2)
-    return a.denominator    
 
-# 분자를 반환한다.
+def get_denominator(number1, number2):
+    """ 분모를 반환한다."""
+    a = Fraction(number1, number2)
+    return a.denominator
+
+
 def get_numerator(number1, number2):
+    """ 분자를 반환한다."""
     a = Fraction(number1, number2)
     return a.numerator
+
 
 def test_testing_floats():
     number1 = 1.25
@@ -29,5 +34,6 @@ def test_testing_floats():
     assert(get_numerator(number2, number6) == number2)
     print("테스트 통과!")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     test_testing_floats()

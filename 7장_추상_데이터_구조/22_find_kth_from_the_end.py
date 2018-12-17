@@ -17,7 +17,7 @@ class KthFromLast(LinkedListFIFO):
         return p2.value
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ll = KthFromLast()
     for i in range(1, 11):
         ll.addNode(i)

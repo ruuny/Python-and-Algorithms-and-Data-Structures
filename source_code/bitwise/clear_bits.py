@@ -2,12 +2,12 @@
 
 __author__ = "bt3"
 
-''' Clear a bit in a binary number.
+""" Clear a bit in a binary number.
     Like the reverse of set bit:
     1) first create a number filled of 1s,
         with 0 at i (can create 0001000 and ~)
     2) AND the number so it clears the ith bit
-'''
+"""
 
 
 
@@ -26,7 +26,7 @@ def clear_all_bits_from_most_sig_to_1(num, i):
     return bin(num & mask)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     num = int('10010000', 2)
     print clear_bit(num, 4)   # '0b10000000'
 

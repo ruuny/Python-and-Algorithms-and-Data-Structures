@@ -6,7 +6,7 @@ __author__ = "bt3"
 
 
 def insertion_sort(seq):
-    ''' sort a sequence using the insertion sort alg '''
+    """ sort a sequence using the insertion sort alg """
     for i in range(1, len(seq)):
         j = i
         while j > 0 and seq[j-1] > seq[j]:
@@ -16,7 +16,7 @@ def insertion_sort(seq):
 
 
 def insertion_sort_rec(seq, i = None):
-    ''' sort a sequence using the recursive insertion sort alg '''
+    """ sort a sequence using the recursive insertion sort alg """
     if i == None: i = len(seq) -1
     if i == 0: return i
     insertion_sort_rec(seq, i-1)
@@ -33,7 +33,7 @@ def test_insertion_sort():
     assert(insertion_sort_rec(seq) == sorted(seq))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_insertion_sort()
 
 

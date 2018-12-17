@@ -21,7 +21,7 @@ def check_if_anagram(word1, word2):
     
     
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     word1 = 'abc'
     word2 = 'bca'
     assert(check_if_anagram(word1, word2) == True)

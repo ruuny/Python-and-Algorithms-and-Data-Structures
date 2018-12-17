@@ -4,10 +4,10 @@ __author__ = "bt3"
 
 
 def merge_sort(array):
-    '''
+    """
     >>> merge_sort([3 ,5, 1, 2, 10, 6])
     [1, 2, 3, 5, 6, 10]
-    '''
+    """
     if len(array) < 2:
         return array
 
@@ -33,7 +33,7 @@ def merge_sort(array):
 
 
 
-''' Merge sort for files '''
+""" Merge sort for files """
 def merge_files(list_files):
     result = []
     final = []
@@ -49,6 +49,6 @@ def merge_files(list_files):
     return final
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

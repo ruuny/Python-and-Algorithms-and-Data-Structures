@@ -44,7 +44,7 @@ def beating_stock2(array):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     array = [7, 2, 3, 6, 5, 8, 5, 3, 4]
 
     deal = beating_stock(array)

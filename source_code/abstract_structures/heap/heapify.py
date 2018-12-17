@@ -45,5 +45,5 @@ def test_Heapify():
     h = Heapify(l1)
     assert(h.extract_max() == 8)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_Heapify()

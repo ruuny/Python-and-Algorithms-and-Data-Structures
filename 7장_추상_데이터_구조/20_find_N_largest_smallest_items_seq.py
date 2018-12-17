@@ -33,5 +33,5 @@ def test_find_N_largest_smallest_items_seq():
     print("테스트 통과!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_find_N_largest_smallest_items_seq()

@@ -5,13 +5,13 @@ __author__ = "bt3"
 
 
 def test_doctest():
-    '''
+    """
     >>> 1 == 1
     False
-    '''
+    """
     pass
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 
@@ -25,7 +25,7 @@ class BasicsTestCase(unittest.TestCase):
         self.assertTrue(1 == 1)
         self.assertFalse(1 == 2)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
 
 

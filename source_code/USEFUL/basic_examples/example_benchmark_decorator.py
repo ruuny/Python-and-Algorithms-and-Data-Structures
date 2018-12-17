@@ -23,6 +23,6 @@ def random_tree(n):
     return temp
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     random_tree(10000)
 

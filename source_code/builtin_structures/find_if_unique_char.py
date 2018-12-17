@@ -27,6 +27,6 @@ def find_if_unique_chars(word):
     return unique
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

@@ -28,7 +28,7 @@ class SetOfStacks(Stack):
         aux.extend(self.items)
         return f"{aux}"
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     capacity = 5
     stack = SetOfStacks(capacity)
     print(f"스택이 비었나요? {stack.isEmpty()}")

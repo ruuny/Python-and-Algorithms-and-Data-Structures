@@ -12,7 +12,7 @@ def worker(num):
         print(f"스레드 {num+1} : 처리 완료 {item}")
         q.task_done()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     num_worker_threads = 5
     threads = []
     for i in range(num_worker_threads):

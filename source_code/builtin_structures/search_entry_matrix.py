@@ -3,11 +3,11 @@
 __author__ = "bt3"
 
 
-''' Search an Entry in a Matrix where the Rows and columns are Sorted
+""" Search an Entry in a Matrix where the Rows and columns are Sorted
         In this 2D matrix, every row is increasingly sorted from left to right,
         and every column is increasingly sorted from top to bottom.
         The runtime is O(m+n).
-'''
+"""
 
 def find_elem_matrix_bool(m1, value):
 
@@ -37,6 +37,6 @@ def test_find_elem_matrix_bool(module_name='this module'):
     assert(find_elem_matrix_bool(m2,0) == True)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_find_elem_matrix_bool()
 

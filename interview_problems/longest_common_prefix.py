@@ -25,7 +25,7 @@ def longest_common_substring(s1, s2):
              
     
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     str1 = 'hasfgeaae'
     str2 = 'bafgekk'
     result = 'fge'

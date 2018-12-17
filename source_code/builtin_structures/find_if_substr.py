@@ -28,7 +28,7 @@ def find_substr(s1, s2):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s1 = 'buffy is a vampire slayer'
     s2 = 'vampire'
     s3 = 'angel'

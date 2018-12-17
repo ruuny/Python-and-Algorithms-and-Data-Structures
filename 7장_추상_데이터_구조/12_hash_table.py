@@ -37,5 +37,5 @@ def test_hash_tables():
     H1._delete(2)
     H1._print()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_hash_tables()

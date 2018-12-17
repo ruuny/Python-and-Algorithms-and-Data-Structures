@@ -3,19 +3,19 @@
 __author__ = "bt3"
 
 
-'''
+"""
 given an array of intervals, return max number of non-overlapping intervals
-'''
+"""
 
 from collections import defaultdict
 
 def non_overlapping(array):
-    '''
+    """
     >>> non_overlapping([(1,2), (2,5), (1, 6)])
     [[(1, 2), (2, 5)]]
     >>> non_overlapping([(1,4), (2,5), (3, 6)])
     []
-    '''
+    """
     total = []
 
     for i, t in enumerate(array):
@@ -29,7 +29,7 @@ def non_overlapping(array):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 

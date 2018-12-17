@@ -3,7 +3,7 @@
 __author__ = "bt3"
 
 
-'''transform a decimal number to a binary number with a stack '''
+"""transform a decimal number to a binary number with a stack """
 
 
 from stack import Stack
@@ -25,6 +25,6 @@ def dec2bin_with_stack(decnum):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     decnum = 9
     assert(dec2bin_with_stack(decnum) == '1001')

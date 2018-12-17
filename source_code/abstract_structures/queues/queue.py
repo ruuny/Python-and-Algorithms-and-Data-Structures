@@ -47,7 +47,7 @@ class Queue(object):
         return not (bool(self.in_stack) or bool(self.out_stack))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     queue = Queue()
     print("Is the queue empty? ", queue.isEmpty())
     print("Adding 0 to 10 in the queue...")

@@ -26,7 +26,7 @@ def netcat(hostname, port, content):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     PORT = 12345
     HOSTNAME = '54.209.5.48'

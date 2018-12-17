@@ -39,7 +39,7 @@ class StackMin(Stack):
         return f"{aux}"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     stack = StackMin()
     print(f"스택이 비었나요? {stack.isEmpty()}")
     print("스택에 숫자 10~1과 1~4를 추가합니다.")

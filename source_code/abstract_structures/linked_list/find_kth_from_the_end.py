@@ -3,10 +3,10 @@
 __author__ = "bt3"
 
 
-''' Find the mth-to-last element of a linked list.
+""" Find the mth-to-last element of a linked list.
     One option is having two pointers, separated by m. P1 start at the roots
     (p1 = self.root) and p2 is m-behinf pointer, which is created when p1 is at m.
-    When p1 reach the end, p2 is the node. '''
+    When p1 reach the end, p2 is the node. """
 
 from linked_list_fifo import LinkedListFIFO
 from node import Node
@@ -30,7 +30,7 @@ class LinkedListFIFO_find_kth(LinkedListFIFO):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ll = LinkedListFIFO_find_kth()
     for i in range(1, 11):
         ll.addNode(i)

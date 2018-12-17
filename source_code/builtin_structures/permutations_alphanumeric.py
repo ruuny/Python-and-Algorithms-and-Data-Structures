@@ -3,17 +3,17 @@
 __author__ = "bt3"
 
 
-''' Write code to generate all possible case permutations of a given
+""" Write code to generate all possible case permutations of a given
 lower-cased string
-'''
+"""
 
 def alpha_permutation(string):
-    '''
+    """
     >>> alpha_permutation('0ab')
     ['0Ab', '0Ab', '0ab', '0ab', '0Ba', '0Ba', '0ba', '0ba', 'ab0', 'a0b', 'a0b', 'b0a', 'b0a', 'ba0']
     >>> alpha_permutation('')
     ''
-    '''
+    """
 
     if len(string) < 2:
         return string
@@ -31,7 +31,7 @@ def alpha_permutation(string):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 

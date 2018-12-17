@@ -7,7 +7,7 @@ import time
 import numpy as np
 
 def testing_numpy():
-    ''' tests many features of numpy '''
+    """ tests many features of numpy """
     ax = np.array([1,2,3])
     ay = np.array([3,4,5])
     print(ax)
@@ -48,13 +48,13 @@ def numpy_version():
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     testing_numpy()
     print(trad_version())
     print(numpy_version())
 
 
-'''
+"""
 3.23564291
 0.0714290142059
-'''
+"""

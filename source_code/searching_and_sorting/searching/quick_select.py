@@ -5,7 +5,7 @@ __author__ = "bt3"
 
 import random
 
-''' The simplest way...'''
+""" The simplest way..."""
 def quickSelect(seq, k):
     # this part is the same as quick sort
     len_seq = len(seq)
@@ -31,8 +31,8 @@ def quickSelect(seq, k):
 
 
 
-''' If you don't want to use pythons feature at all and
-    also select pivot randomly'''
+""" If you don't want to use pythons feature at all and
+    also select pivot randomly"""
 
 def swap(seq, x, y):
     tmp = seq[x]
@@ -73,7 +73,7 @@ def quickSelectHard(seq, k, left=None, right=None):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Checking the Answer
     seq = [10, 60, 100, 50, 60, 75, 31, 50, 30, 20, 120, 170, 200]
     #seq = [3, 7, 2, 1, 4, 6, 5, 10, 9, 11]

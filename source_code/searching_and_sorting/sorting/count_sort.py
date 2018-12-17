@@ -7,7 +7,7 @@ __author__ = "bt3"
 from collections import defaultdict
 
 def count_sort_dict(a):
-    ''' an example of counting sort using default dictionaries '''
+    """ an example of counting sort using default dictionaries """
     b, c = [], defaultdict(list)
     for x in a:
         c[x].append(x) # we could have used key = lambda x:x
@@ -21,7 +21,7 @@ def test_count_sort():
     assert(count_sort_dict(seq) == sorted(seq))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_count_sort()
 
 

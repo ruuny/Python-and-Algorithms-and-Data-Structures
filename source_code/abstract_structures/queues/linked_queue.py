@@ -2,7 +2,7 @@
 
 __author__ = "bt3"
 
-''' Queue acts as a container for nodes (objects) that are inserted and removed according FIFO'''
+""" Queue acts as a container for nodes (objects) that are inserted and removed according FIFO"""
 
 
 class Node(object):
@@ -63,7 +63,7 @@ class LinkedQueue(object):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     queue = LinkedQueue()
     print("Is the queue empty? ", queue.isEmpty())
     print("Adding 0 to 10 in the queue...")

@@ -4,12 +4,12 @@ __author__ = "bt3"
 
 
 def binary_search_matrix_rec(m, key, lo=0, hi=None):
-    '''
+    """
     >>> m = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     >>> binary_search_matrix_rec(m, 6)
     (1, 2)
     >>> binary_search_matrix_rec(m, 12)
-    '''
+    """
     if not m:
         return None
 
@@ -36,9 +36,9 @@ def binary_search_matrix_rec(m, key, lo=0, hi=None):
 
 
 def binary_search_matrix_iter(m, key):
-    '''
+    """
 
-    '''
+    """
 
     if not m:
         return None
@@ -62,12 +62,12 @@ def binary_search_matrix_iter(m, key):
 
 
 def searching_matrix(m, key):
-    '''
+    """
     >>> m = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     >>> searching_matrix(m, 6)
     (1, 2)
     >>> searching_matrix(m, 12)
-    '''
+    """
 
     if not m:
         return None
@@ -87,6 +87,6 @@ def searching_matrix(m, key):
     return None
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

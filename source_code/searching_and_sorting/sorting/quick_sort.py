@@ -4,10 +4,10 @@ __author__ = "bt3"
 
 
 def qs(array):
-    '''
+    """
     >>> qs([4,1,6,2,7,9,3])
     [1, 2, 3, 4, 6, 7, 9]
-    '''
+    """
     if len(array) < 2:
         return array
 
@@ -30,10 +30,10 @@ def partition(seq):
     return lo, pi, hi
 
 def quick_sort_divided(seq):
-    '''
+    """
     >>> quick_sort_divided([4,1,6,2,7,9,3])
     [1, 2, 3, 4, 6, 7, 9]
-    '''
+    """
     if len(seq) < 2:
         return seq
     lo, pi, hi = partition(seq)
@@ -41,6 +41,6 @@ def quick_sort_divided(seq):
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

@@ -1,5 +1,6 @@
 import sys
 
+
 def read_data(filename):
     lines = []
     fh = None
@@ -15,6 +16,7 @@ def read_data(filename):
             fh.close()
     return lines
 
+
 def write_data(lines, filename):
     fh = None
     try:
@@ -27,14 +29,16 @@ def write_data(lines, filename):
         if fh is not None:
             fh.close()
 
+
 def remove_blank_lines():
     if len(sys.argv) < 2:
-        print (f"Usage: {sys.argv[0]} infile1 [infile2...]")
+        print(f"Usage: {sys.argv[0]} infile1 [infile2...]")
 
     for filename in sys.argv[1:]:
         lines = read_data(filename)
         if lines:
-            write_data(lines, filename)          
-            
-if __name__ == '__main__':
+            write_data(lines, filename)
+
+
+if __name__ == "__main__":
     remove_blank_lines()

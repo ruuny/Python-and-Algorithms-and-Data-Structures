@@ -20,11 +20,11 @@ M or S=N*(N+1)/2 - M. Therefore M = N*(N+1)/2 - S.
 import math
 
 def find_two_missing_numbers(l1):
-    '''
+    """
     >>> l1 = [1, 3, 5]
     >>> find_two_missing_numbers(l1)
     (4, 2)
-    '''
+    """
 
     n_min_2 = len(l1)
     n = n_min_2 + 2
@@ -45,7 +45,7 @@ def find_two_missing_numbers(l1):
     return int(num1), int(num2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
 

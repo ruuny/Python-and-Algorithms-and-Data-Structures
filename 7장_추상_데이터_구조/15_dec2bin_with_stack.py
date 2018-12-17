@@ -14,6 +14,6 @@ def dec2bin_with_stack(decnum):
 
     return str_aux
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     decnum = 9
     print(dec2bin_with_stack(decnum))

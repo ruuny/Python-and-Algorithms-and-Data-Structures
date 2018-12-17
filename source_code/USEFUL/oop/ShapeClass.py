@@ -50,7 +50,7 @@ class Circle(Point):
         
  
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = Point(3,4)
     print(a.distance_from_origin())
     c = Circle(3,2,1)
