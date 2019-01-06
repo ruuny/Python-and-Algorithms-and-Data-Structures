@@ -6,7 +6,11 @@ class Deque(Queue):
         self.items.append(item)
 
     def dequeue_front(self):
-        return self.items.pop(0)
+        value = self.items.pop(0)
+        if value is not None:
+            return value
+        else:
+            print("Deque is empty.")
 
 
 if __name__ == "__main__":
@@ -20,13 +24,12 @@ if __name__ == "__main__":
     print(f"dequeue: {deque.dequeue()}")
     print(f"peek: {deque.peek()}")
     print(f"데크가 비었나요? {deque.isEmpty()}")
-    print(deque)
-
-    print("\n데크 메서드를 사용합니다.")
-    print(f"dequeue (앞): {deque.dequeue_front()}")
+    print()
+    print(f"데크: {deque}")
+    print(f"dequeue: {deque.dequeue_front()}")
     print(f"peek: {deque.peek()}")
-    print(deque)
-    print("enqueue (뒤)를 수행합니다.")
+    print(f"데크: {deque}")
+    print("enqueue_back(50)을 수행합니다.")
     deque.enqueue_back(50)
     print(f"peek: {deque.peek()}")
-    print(deque)
+    print(f"데크: {deque}")

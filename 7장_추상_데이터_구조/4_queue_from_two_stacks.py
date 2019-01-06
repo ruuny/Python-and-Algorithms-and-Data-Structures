@@ -16,7 +16,7 @@ class Queue(object):
         if self.out_stack:
             return self.out_stack.pop()
         else:
-            return "Queue empty!"
+            print("Queue is empty!")
 
     def size(self):
         return len(self.in_stack) + len(self.out_stack)
@@ -27,7 +27,7 @@ class Queue(object):
         if self.out_stack:
             return self.out_stack[-1]
         else:
-            return "Queue empty!"
+            print("Queue is empty!")
 
     def __repr__(self):
         if not self.out_stack:
@@ -35,7 +35,7 @@ class Queue(object):
         if self.out_stack:
             return f"{self.out_stack}"
         else:
-            return "Queue empty!"
+            print("Queue is empty!")
 
     def isEmpty(self):
         return not (bool(self.in_stack) or bool(self.out_stack))

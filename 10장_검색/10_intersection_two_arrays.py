@@ -42,7 +42,7 @@ def test_intersection_two_arrays():
     assert(set(intersection_two_arrays_sets(seq1, seq2)) == set([3, 5]))
     assert(intersection_two_arrays_bs(seq1, seq2) == [3, 5])
     assert(intersection_two_arrays_ms(seq1, seq2) == [3, 5])
-    print('테스트 통과!')
+    print("테스트 통과!")
 
 
 if __name__ == "__main__":

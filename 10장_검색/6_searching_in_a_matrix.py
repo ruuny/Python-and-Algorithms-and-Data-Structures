@@ -25,7 +25,7 @@ def test_searching_in_a_matrix():
     assert(searching_in_a_matrix(a, 14) == False)
     assert(searching_in_a_matrix(b, 3) == True)
     assert(searching_in_a_matrix(b, 5) == False)
-    print('테스트 통과!')
+    print("테스트 통과!")
 
 
 if __name__ == "__main__":

@@ -27,8 +27,7 @@ class Stack(object):
         if self.content:
             return self.content[-1]
         else:
-            print('Stack is empty.')
-
+            print("Stack is empty.")
 
 
 if __name__ == "__main__":

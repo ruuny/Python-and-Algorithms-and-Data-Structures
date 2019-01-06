@@ -15,13 +15,14 @@ class Node(object):
     def setNext(self, newpointer):
         self.pointer = newpointer
 
+
 if __name__ == "__main__":
     L = Node("a", Node("b", Node("c", Node("d"))))
-    assert(L.pointer.pointer.value=='c')
+    assert(L.pointer.pointer.value == "c")
 
     print(L.getData())
     print(L.getNext().getData())
-    L.setData('aa')
-    L.setNext(Node('e'))
+    L.setData("aa")
+    L.setNext(Node("e"))
     print(L.getData())
     print(L.getNext().getData())

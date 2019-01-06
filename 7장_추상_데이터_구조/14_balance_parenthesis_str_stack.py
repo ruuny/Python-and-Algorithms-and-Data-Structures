@@ -1,5 +1,6 @@
 from stack import Stack
 
+
 def balance_par_str_with_stack(str1):
     s = Stack()
     balanced = True
@@ -10,7 +11,6 @@ def balance_par_str_with_stack(str1):
 
         if symbol == "(":
             s.push(symbol)
-
         else:
             if s.isEmpty():
                 balanced = False
@@ -21,9 +21,9 @@ def balance_par_str_with_stack(str1):
 
     if balanced and s.isEmpty():
         return True
-
     else:
         return False
+
 
 if __name__ == "__main__":
     print(balance_par_str_with_stack('((()))'))

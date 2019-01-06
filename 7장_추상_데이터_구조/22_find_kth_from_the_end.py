@@ -7,7 +7,7 @@ class KthFromLast(LinkedListFIFO):
         p1, p2 = self.head, self.head
         i = 0
         while p1:
-            if i > k:
+            if i > k-1:
                 try:
                     p2 = p2.pointer
                 except AttributeError:

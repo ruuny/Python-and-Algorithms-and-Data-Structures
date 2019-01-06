@@ -2,10 +2,10 @@ from linkedListFIFO import LinkedListFIFO
 from node import Node
 
 
-def partList(ll, n):  
+def partList(ll, n):
     more = LinkedListFIFO()
     less = LinkedListFIFO()
-    
+
     node = ll.head
 
     while node:
@@ -21,11 +21,11 @@ def partList(ll, n):
 
     less.addNode(n)
     nodemore = more.head
-    
+
     while nodemore:
         less.addNode(nodemore.value)
         nodemore = nodemore.pointer
-    
+
     return less
 
 
@@ -35,9 +35,9 @@ if __name__ == "__main__":
     for i in l:
         ll.addNode(i)
 
-    print('분할 전:')
+    print("분할 전:")
     ll._printList()
 
-    print('분할 후:')
+    print("분할 후:")
     newll = partList(ll, 6)
     newll._printList()

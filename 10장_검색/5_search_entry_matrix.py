@@ -19,7 +19,7 @@ def test_find_elem_matrix_bool():
     assert(find_elem_matrix_bool(m1, 3) == False)
     m2 = [[0]]
     assert(find_elem_matrix_bool(m2, 0) == True)
-    print('테스트 통과!')
+    print("테스트 통과!")
 
 
 if __name__ == "__main__":

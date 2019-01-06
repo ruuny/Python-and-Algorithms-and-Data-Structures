@@ -6,13 +6,14 @@ def gnome_sort(seq):
         else:
             seq[i], seq[i-1] = seq[i-1], seq[i]
             i -= 1
+        print(seq)
     return seq
 
 
 def test_gnome_sort():
-    seq = [3, 5, 2, 6, 8, 1, 0, 3, 5, 6, 2, 5, 4, 1, 5, 3]
+    seq = [11, 3, 28, 43, 9, 4]
     assert(gnome_sort(seq) == sorted(seq))
-    print('테스트 통과!')
+    print("테스트 통과!")
 
 
 if __name__ == "__main__":

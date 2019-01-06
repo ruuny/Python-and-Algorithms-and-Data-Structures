@@ -17,7 +17,7 @@ def find_max_unimodal_array(A):
 def test_find_max_unimodal_array():
     seq = [1, 2, 5, 6, 7, 10, 12, 9, 8, 7, 6]
     assert(find_max_unimodal_array(seq) == max(seq))
-    print('테스트 통과!')
+    print("테스트 통과!")
 
 
 if __name__ == "__main__":

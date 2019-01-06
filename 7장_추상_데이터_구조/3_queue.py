@@ -9,13 +9,20 @@ class Queue(object):
         self.items.insert(0, item)
 
     def dequeue(self):
-        return self.items.pop()
+        value = self.items.pop()
+        if value is not None:
+            return value
+        else:
+            print("Queue is empty.")
 
     def size(self):
         return len(self.items)
 
     def peek(self):
-        return self.items[-1]
+        if self.items:
+            return self.items[-1]
+        else:
+            print("Queue is empty.")
 
     def __repr__(self):
         return f"{self.items}"

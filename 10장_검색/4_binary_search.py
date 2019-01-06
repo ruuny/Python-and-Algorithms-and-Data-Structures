@@ -30,7 +30,7 @@ def test_binary_search():
     target = 6
     assert(binary_search_iter(seq, target) == 3)
     assert(binary_search_rec(seq, target, 0, len(seq)) == 3)
-    print('테스트 통과!')
+    print("테스트 통과!")
 
 
 if __name__ == "__main__":

@@ -1,10 +1,12 @@
 class A(object):
+    _hello = True
+
     def foo(self, x):
         print(f"foo({self}, {x}) 실행")
 
     @classmethod
     def class_foo(cls, x):
-        print(f"class_foo({cls}, {x}) 실행")
+        print(f"class_foo({cls}, {x}) 실행: {cls._hello}")
 
     @staticmethod
     def static_foo(x):

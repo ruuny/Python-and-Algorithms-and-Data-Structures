@@ -1,10 +1,11 @@
 from node import Node
 
+
 class LinkedListFIFO(object):
     def __init__(self):
-        self.head = None # 헤드(머리)
+        self.head = None  # 헤드(머리)
         self.length = 0
-        self.tail = None # 테일(꼬리)
+        self.tail = None  # 테일(꼬리)
 
     # 헤드부터 각 노드의 값을 출력한다.
     def _printList(self):
@@ -26,7 +27,7 @@ class LinkedListFIFO(object):
         self.length = 0
         self.head = None
         self.tail = None
-        print('연결 리스트가 비었습니다.')
+        print("연결 리스트가 비었습니다.")
 
     # 새 노드를 추가한다. 테일이 있다면, 테일의 다음 노드는
     # 새 노드를 가리키고, 테일은 새 노드를 가리킨다.
@@ -76,7 +77,7 @@ class LinkedListFIFO(object):
             node, prev, i = self._find(index)
             if i == index and node:
                 self.length -= 1
-                if i == 0 or not prev :
+                if i == 0 or not prev:
                     self.head = node.pointer
                     self.tail = node.pointer
                 else:
@@ -92,7 +93,7 @@ class LinkedListFIFO(object):
             node, prev, i = self._find_by_value(value)
             if node and node.value == value:
                 self.length -= 1
-                if i == 0 or not prev :
+                if i == 0 or not prev:
                     self.head = node.pointer
                     self.tail = node.pointer
                 else:

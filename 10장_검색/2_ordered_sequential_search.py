@@ -14,7 +14,7 @@ def test_ordered_sequential_search():
     n2 = 7
     assert(ordered_sequential_search(seq, n1) == True)
     assert(ordered_sequential_search(seq, n2) == False)
-    print('테스트 통과!')
+    print("테스트 통과!")
 
 
 if __name__ == "__main__":

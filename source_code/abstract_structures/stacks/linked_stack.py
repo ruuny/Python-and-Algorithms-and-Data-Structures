@@ -22,38 +22,33 @@ class Stack(object):
     def push(self, item):
         self.head = Node(item, self.head)
 
-
     def pop(self):
         if self.head:
             node = self.head
             self.head = node.pointer
             return node.value
         else:
-            print('Stack is empty.')
-
+            print("Stack is empty.")
 
     def peek(self):
         if self.head:
             return self.head.value
         else:
-            print('Stack is empty.')
-
+            print("Stack is empty.")
 
     def size(self):
         node = self.head
         count = 0
         while node:
-            count +=1
+            count += 1
             node = node.pointer
         return count
-
 
     def _printList(self):
         node = self.head
         while node:
             print(node.value)
             node = node.pointer
-
 
 
 if __name__ == "__main__":

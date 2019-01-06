@@ -2,9 +2,7 @@ import random
 
 
 def swap(A, x, y):
-    tmp = A[x]
-    A[x] = A[y]
-    A[y] = tmp
+    A[x], A[y] = A[y], A[x]
 
 
 def qselect(A, k, left=None, right=None):

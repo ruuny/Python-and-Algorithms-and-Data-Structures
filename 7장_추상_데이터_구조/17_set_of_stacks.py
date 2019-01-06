@@ -1,5 +1,6 @@
 from stack import Stack
 
+
 class SetOfStacks(Stack):
     def __init__(self, capacity=4):
         self.setofstacks = []
@@ -24,9 +25,10 @@ class SetOfStacks(Stack):
     def __repr__(self):
         aux = []
         for s in self.setofstacks:
-             aux.extend(s)
+            aux.extend(s)
         aux.extend(self.items)
         return f"{aux}"
+
 
 if __name__ == "__main__":
     capacity = 5

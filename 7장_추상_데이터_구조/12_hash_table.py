@@ -1,5 +1,6 @@
 from linkedListFIFO import LinkedListFIFO
 
+
 class HashTableLL(object):
     def __init__(self, size):
         self.size = size
@@ -7,7 +8,7 @@ class HashTableLL(object):
         self._createHashTable()
 
     def _createHashTable(self):
-        for i in range(self.size) :
+        for i in range(self.size):
             self.slots.append(LinkedListFIFO())
 
     def _find(self, item):
@@ -26,6 +27,7 @@ class HashTableLL(object):
             print(f"슬롯(slot) {i}:")
             self.slots[i]._printList()
 
+
 def test_hash_tables():
     H1 = HashTableLL(3)
     for i in range(0, 20):
@@ -36,6 +38,7 @@ def test_hash_tables():
     H1._delete(1)
     H1._delete(2)
     H1._print()
+
 
 if __name__ == "__main__":
     test_hash_tables()

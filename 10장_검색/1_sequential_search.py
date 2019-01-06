@@ -11,7 +11,7 @@ def test_sequential_search():
     n2 = 7
     assert(sequential_search(seq, n1) == True)
     assert(sequential_search(seq, n2) == False)
-    print('테스트 통과!')
+    print("테스트 통과!")
 
 
 if __name__ == "__main__":

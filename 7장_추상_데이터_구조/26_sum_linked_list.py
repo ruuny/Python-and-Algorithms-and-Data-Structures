@@ -21,9 +21,8 @@ def sumlls(l1, l2):
         d2 = dig2.value
         sum_d = d1 + d2 + pointer
         if sum_d > 9:
-            pointer = sum_d//10
-            lsum.addNode(sum_d%10)
-
+            pointer = sum_d // 10
+            lsum.addNode(sum_d % 10)
         else:
             lsum.addNode(sum_d)
             pointer = 0
@@ -34,7 +33,7 @@ def sumlls(l1, l2):
     if dig1:
         sum_d = pointer + dig1.value
         if sum_d > 9:
-            lsum.addNode(sum_d%10)
+            lsum.addNode(sum_d % 10)
         else:
             lsum.addNode(sum_d)
         dig1 = dig1.pointer
@@ -42,7 +41,7 @@ def sumlls(l1, l2):
     if dig2:
         sum_d = pointer + dig2.value
         if sum_d > 9:
-            lsum.addNode(sum_d%10)
+            lsum.addNode(sum_d % 10)
         else:
             lsum.addNode(sum_d)
         dig2 = dig2.pointer
@@ -51,13 +50,13 @@ def sumlls(l1, l2):
 
 
 if __name__ == "__main__":
-    l1 = LinkedListFIFOYield() # 2671
+    l1 = LinkedListFIFOYield()  # 2671
     l1.addNode(1)
     l1.addNode(7)
     l1.addNode(6)
     l1.addNode(2)
 
-    l2 = LinkedListFIFOYield() # 455
+    l2 = LinkedListFIFOYield()  # 455
     l2.addNode(5)
     l2.addNode(5)
     l2.addNode(4)

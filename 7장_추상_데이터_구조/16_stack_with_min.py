@@ -14,7 +14,7 @@ class StackMin(Stack):
 
     def push(self, value):
         if self.isEmpty() or self.minimum > value:
-           self.minimum = value
+            self.minimum = value
         self.items.append(NodeWithMin(value, self.minimum))
 
     def peek(self):

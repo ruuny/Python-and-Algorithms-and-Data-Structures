@@ -13,20 +13,20 @@ class AnimalShelter(object):
         self.tailCat = None
         self.tailDog = None
         self.animalNumber = 0
-    
+
     def enqueue(self, animalName, animalKind):
         self.animalNumber += 1
         newAnimal = Node(animalName, animalKind)
         newAnimal.timestamp = self.animalNumber
 
-        if animalKind == 'cat':
+        if animalKind == "cat":
             if not self.headCat:
                 self.headCat = newAnimal
             if self.tailCat:
                 self.tailCat.pointer = newAnimal
             self.tailCat = newAnimal
 
-        elif animalKind == 'dog':
+        elif animalKind == "dog":
             if not self.headDog:
                 self.headDog = newAnimal
             if self.tailDog:
@@ -77,10 +77,10 @@ class AnimalShelter(object):
 
 if __name__ == "__main__":
     qs = AnimalShelter()
-    qs.enqueue('밥', 'cat')
-    qs.enqueue('미아', 'cat')
-    qs.enqueue('요다', 'dog')
-    qs.enqueue('울프', 'dog')
+    qs.enqueue("밥", "cat")
+    qs.enqueue("미아", "cat")
+    qs.enqueue("요다", "dog")
+    qs.enqueue("울프", "dog")
     qs._print()
 
     print("하나의 개와 고양이에 대해서 dequeue를 실행합니다.")

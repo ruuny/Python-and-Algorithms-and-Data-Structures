@@ -26,16 +26,17 @@ def isCircularll(ll):
             return True
     return False
 
+
 def test_isCircularll():
     ll = LinkedListFIFO()
     for i in range(10):
         ll.addNode(i)
-    assert(isCircularll(ll) == False)
+    assert(isCircularll(ll) is False)
 
     lcirc = CicularLinkedListFIFO()
     for i in range(10):
         lcirc.addNode(i)
-    assert(isCircularll(lcirc) == True)
+    assert(isCircularll(lcirc) is True)
 
     print("테스트 통과!")
 
