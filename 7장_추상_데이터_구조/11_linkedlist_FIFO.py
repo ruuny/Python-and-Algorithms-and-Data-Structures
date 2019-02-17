@@ -83,7 +83,7 @@ class LinkedListFIFO(object):
                 else:
                     prev.pointer = node.pointer
             else:
-                print(f"인덱스 {index}에 해당하는 노드가 없습니다.")
+                print("인덱스 {0}에 해당하는 노드가 없습니다.".format(index))
 
     # 값에 해당하는 노드를 삭제한다.
     def deleteNodeByValue(self, value):
@@ -99,7 +99,7 @@ class LinkedListFIFO(object):
                 else:
                     prev.pointer = node.pointer
             else:
-                print(f"값 {value}에 해당하는 노드가 없습니다.")
+                print("값 {0}에 해당하는 노드가 없습니다.".format(value))
 
 
 if __name__ == "__main__":

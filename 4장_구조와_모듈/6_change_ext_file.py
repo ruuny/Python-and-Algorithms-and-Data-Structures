@@ -5,7 +5,8 @@ import shutil
 
 def change_file_ext():
     if len(sys.argv) < 2:
-        print(f"Usage: {sys.argv[0]} filename.old_ext 'new_ext'")
+        print("Usage: python {0} filename.old_ext 'new_ext'".format(
+            sys.argv[0]))
         sys.exit()
 
     name = os.path.splitext(sys.argv[1])[0] + "." + sys.argv[2]

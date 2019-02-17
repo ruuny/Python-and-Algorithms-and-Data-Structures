@@ -3,7 +3,7 @@ class SubscriberOne(object):
         self.name = name
 
     def update(self, message):
-        print(f"{self.name}, {message}")
+        print("{0}, {1}".format(self.name, message))
 
 
 class SubscriberTwo(object):
@@ -11,7 +11,7 @@ class SubscriberTwo(object):
         self.name = name
 
     def receive(self, message):
-        print(f"{self.name}, {message}")
+        print("{0}, {1}".format(self.name, message))
 
 
 class Publisher(object):

@@ -6,7 +6,7 @@ def benchmark(func):
     def wrapper(*args, **kwargs):
         t = time.perf_counter()
         res = func(*args, **kwargs)
-        print(f"{func.__name__} {time.perf_counter()-t}")
+        print("{0} {1}".format(func.__name__, time.perf_counter()-t))
         return res
     return wrapper
 

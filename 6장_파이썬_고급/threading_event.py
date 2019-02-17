@@ -11,20 +11,20 @@ logging.basicConfig(level=logging.DEBUG,
 
 
 def wait_for_event(event):
-    logging.debug(f"wait_for_event 시작")
+    logging.debug("wait_for_event 시작")
     event_is_set = event.wait()
-    logging.debug(f"이벤트 셋: {event_is_set}")
+    logging.debug("이벤트 셋: {0}".format(event_is_set))
 
 
 def wait_for_event_timeout(event, t):
     while not event.isSet():
-        logging.debug(f"wait_for_event_timeout 시작")
+        logging.debug("wait_for_event_timeout 시작")
         event_is_set = event.wait(t)
-        logging.debug(f"이벤트 셋: {event_is_set}")
+        logging.debug("이벤트 셋: {0}".format(event_is_set))
         if event_is_set:
-            logging.debug(f"이벤트 수행")
+            logging.debug("이벤트 수행")
         else:
-            logging.debug(f"다른 일 수행")
+            logging.debug("다른 일 수행")
 
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@ class Heapify(object):
             self.__max_heapify__(i)
 
     def __repr__(self):
-        return f"{self.data}"
+        return repr(self.data)
 
     def parent(self, i):
         if i & 1:

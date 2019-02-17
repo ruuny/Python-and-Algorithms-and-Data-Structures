@@ -2,7 +2,7 @@ class SimpleTree(object):
     def __init__(self, value=None, children=None):
         self.value = value
         self.children = children
-        if self.children == None:
+        if self.children is None:
             self.children = []
 
     def __repr__(self, level=0):
@@ -13,17 +13,17 @@ class SimpleTree(object):
 
 
 def main():
-    """
-    'a'
-    'b'
-    'd'
-    'e'
-    'c'
-    'h'
-    'g'
-    """
-    st = SimpleTree('a', [SimpleTree('b', [SimpleTree('d'), SimpleTree(
-        'e')]), SimpleTree('c', [SimpleTree('h'), SimpleTree('g')])])
+    st = SimpleTree('a', [
+            SimpleTree('b',
+                [
+                    SimpleTree('d'), 
+                    SimpleTree('e')
+                ]), 
+            SimpleTree('c', [
+                SimpleTree('h'), 
+                SimpleTree('g')
+            ])
+    ])
     print(st)
 
 

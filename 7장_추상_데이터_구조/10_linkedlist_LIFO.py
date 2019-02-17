@@ -58,7 +58,7 @@ class LinkedListLIFO(object):
         if index == i:
             self._delete(prev, node)
         else:
-            print(f"인덱스 {index}에 해당하는 노드가 없습니다.")
+            print("인덱스 {0}에 해당하는 노드가 없습니다.".format(index))
 
     # 값으로 노드를 찾아서 삭제한다.
     def deleteNodeByValue(self, value):
@@ -66,25 +66,25 @@ class LinkedListLIFO(object):
         if found:
             self._delete(prev, node)
         else:
-            print(f"값 {value}에 해당하는 노드가 없습니다.")
+            print("값 {0}에 해당하는 노드가 없습니다.".format(value))
 
 
 if __name__ == "__main__":
     ll = LinkedListLIFO()
     for i in range(1, 5):
         ll._add(i)
-    print("연결 리스트 출력:")
+    print("연결 리스트:")
     ll._printList()
-    print("인덱스가 2인 노드 삭제 후, 연결 리스트 출력:")
+    print("인덱스가 2인 노드 삭제 후, 연결 리스트:")
     ll.deleteNode(2)
     ll._printList()
-    print("값이 3인 노드 삭제 후, 연결 리스트 출력:")
+    print("값이 3인 노드 삭제 후, 연결 리스트:")
     ll.deleteNodeByValue(3)
     ll._printList()
-    print("값이 15인 노드 추가 후, 연결 리스트 출력:")
+    print("값이 15인 노드 추가 후, 연결 리스트:")
     ll._add(15)
     ll._printList()
-    print("모든 노드 모두 삭제 후, 연결 리스트 출력:")
+    print("모든 노드 모두 삭제 후, 연결 리스트:")
     for i in range(ll.length-1, -1, -1):
         ll.deleteNode(i)
     ll._printList()

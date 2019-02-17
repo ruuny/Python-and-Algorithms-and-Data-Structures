@@ -49,7 +49,7 @@ class DLinkedList(LinkedListFIFO):
             if i == index:
                 self._delete(node)
             else:
-                print(f"인덱스 {index}에 해당하는 노드가 없습니다.")
+                print("인덱스 {0}에 해당하는 노드가 없습니다.".format(index))
 
 
 if __name__ == "__main__":

@@ -1,21 +1,22 @@
+from bisect import bisect
 from itertools import combinations
 from functools import wraps
-from bisect import bisect
 
-from timeit import timeit
+from benchmark import benchmark
 
 
-# 단순 반복문
 def naive_longest_inc_subseq(seq):
+    """ 1) 단순한 방법 """
     for length in range(len(seq), 0, -1):
         for sub in combinations(seq, length):
             if list(sub) == sorted(sub):
                 return len(sub)
 
 
-# 동적 프로그래밍
 def dp_longest_inc_subseq(seq):
+    """ 2) 동적 프로그래밍 """
     L = [1] * len(seq)
+    res = []
     for cur, val in enumerate(seq):
         for pre in range(cur):
             if seq[pre] <= val:
@@ -23,7 +24,6 @@ def dp_longest_inc_subseq(seq):
     return max(L)
 
 
-# 메모이제이션
 def memo(func):
     cache = {}
 
@@ -36,6 +36,7 @@ def memo(func):
 
 
 def memoized_longest_inc_subseq(seq):
+    """ 3) 메모이제이션 """
     @memo
     def L(cur):
         res = 1
@@ -46,8 +47,8 @@ def memoized_longest_inc_subseq(seq):
     return max(L(i) for i in range(len(seq)))
 
 
-# 이진 검색
 def longest_inc_bisec(seq):
+    """ 4) 이진 검색 """
     end = []
     for val in seq:
         idx = bisect(end, val)
@@ -55,32 +56,34 @@ def longest_inc_bisec(seq):
             end.append(val)
         else:
             end[idx] = val
+        # print(end)
     return len(end)
 
 
-@timeit
+@benchmark
 def test_naive_longest_inc_subseq():
     print(naive_longest_inc_subseq(s1))
 
 
-@timeit
+@benchmark
 def test_dp_longest_inc_subseq():
     print(dp_longest_inc_subseq(s1))
 
 
-@timeit
+@benchmark
 def test_memoized_longest_inc_subseq():
     print(memoized_longest_inc_subseq(s1))
 
 
-@timeit
+@benchmark
 def test_longest_inc_bisec():
     print(longest_inc_bisec(s1))
 
 
 if __name__ == "__main__":
-    from random import randrange
-    s1 = [randrange(100) for i in range(20)]
+    # from random import randrange
+    # s1 = [randrange(100) for i in range(20)]
+    s1 = [94, 8, 78, 22, 38, 79, 93, 8, 84, 39]
     print(s1)
     test_naive_longest_inc_subseq()
     test_dp_longest_inc_subseq()

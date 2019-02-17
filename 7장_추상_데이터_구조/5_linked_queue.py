@@ -45,7 +45,7 @@ class LinkedQueue(object):
     def peek(self):
         return self.head.value
 
-    def _print(self):
+    def print(self):
         node = self.head
         while node:
             print(node.value, end=" ")
@@ -55,15 +55,15 @@ class LinkedQueue(object):
 
 if __name__ == "__main__":
     queue = LinkedQueue()
-    print(f"큐가 비었나요? {queue.isEmpty()}")
+    print("큐가 비었나요? {0}".format(queue.isEmpty()))
     print("큐에 숫자 0~9를 추가합니다.")
     for i in range(10):
         queue.enqueue(i)
-    print(f"큐가 비었나요? {queue.isEmpty()}")
-    queue._print()
+    print("큐가 비었나요? {0}".format(queue.isEmpty()))
+    queue.print()
 
-    print(f"큐 크기: {queue.size()}")
-    print(f"peek: {queue.peek()}")
-    print(f"dequeue: {queue.dequeue()}")
-    print(f"peek: {queue.peek()}")
-    queue._print()
+    print("큐 크기: {0}".format(queue.size()))
+    print("peek: {0}".format(queue.peek()))
+    print("dequeue: {0}".format(queue.dequeue()))
+    print("peek: {0}".format(queue.peek()))
+    queue.print()

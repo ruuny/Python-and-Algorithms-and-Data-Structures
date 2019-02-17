@@ -66,12 +66,12 @@ class AnimalShelter(object):
         print("고양이:")
         cats = self.headCat
         while cats:
-            print(f"\t{cats.animalName}")
+            print("\t{0}".format(cats.animalName))
             cats = cats.pointer
         print("개:")
         dogs = self.headDog
         while dogs:
-            print(f"\t{dogs.animalName}")
+            print("\t{0}".format(dogs.animalName))
             dogs = dogs.pointer
 
 

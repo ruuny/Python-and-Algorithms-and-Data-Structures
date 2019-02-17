@@ -6,7 +6,7 @@ def worker(mutex, data, thread_safe):
     if thread_safe:
         mutex.acquire()
     try:
-        print(f"쓰레드 {threading.get_ident()}: {data}\n")
+        print("쓰레드 {0}: {1}\n".format(threading.get_ident(), data))
     finally:
         if thread_safe:
             mutex.release()

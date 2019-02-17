@@ -3,7 +3,7 @@ class Subscriber(object):
         self.name = name
 
     def update(self, message):
-        print(f"{self.name}, {message}")
+        print("{0}, {1}".format(self.name, message))
 
 
 class Publisher(object):
@@ -15,7 +15,7 @@ class Publisher(object):
 
     def register(self, event, who, callback=None):
         if callback is None:
-            callback = getattr(who, 'update')
+            callback = getattr(who, "update")
         self.get_subscribers(event)[who] = callback
 
     def unregister(self, event, who):

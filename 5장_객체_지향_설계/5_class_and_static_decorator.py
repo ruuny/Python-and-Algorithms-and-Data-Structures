@@ -2,15 +2,15 @@ class A(object):
     _hello = True
 
     def foo(self, x):
-        print(f"foo({self}, {x}) 실행")
+        print("foo({0}, {1}) 실행".format(self, x))
 
     @classmethod
     def class_foo(cls, x):
-        print(f"class_foo({cls}, {x}) 실행: {cls._hello}")
+        print("class_foo({0}, {1}) 실행: {2}".format(cls, x, cls._hello))
 
     @staticmethod
     def static_foo(x):
-        print(f"static_foo({x}) 실행")
+        print("static_foo({0}) 실행".format(x))
 
 
 if __name__ == "__main__":

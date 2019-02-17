@@ -14,12 +14,12 @@ class PriorityQueue(object):
         return heapq.heappop(self._queue)[-1]
 
 
-class Item:
+class Item(object):
     def __init__(self, name):
         self.name = name
 
     def __repr__(self):
-        return f"Item({self.name!r})"
+        return "Item({0!r})".format(self.name)
 
 
 def test_priority_queue():

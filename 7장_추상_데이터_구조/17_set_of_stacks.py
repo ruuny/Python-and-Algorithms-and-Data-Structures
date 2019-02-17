@@ -27,20 +27,20 @@ class SetOfStacks(Stack):
         for s in self.setofstacks:
             aux.extend(s)
         aux.extend(self.items)
-        return f"{aux}"
+        return repr(aux)
 
 
 if __name__ == "__main__":
     capacity = 5
     stack = SetOfStacks(capacity)
-    print(f"스택이 비었나요? {stack.isEmpty()}")
+    print("스택이 비었나요? {0}".format(stack.isEmpty()))
     print("스택에 숫자 0~9를 추가합니다.")
     for i in range(10):
         stack.push(i)
     print(stack)
-    print(f"스택 크기: {stack.sizeStack()}")
-    print(f"peek: {stack.peek()}")
-    print(f"pop: {stack.pop()}")
-    print(f"peek: {stack.peek()}")
-    print(f"스택이 비었나요? {stack.isEmpty()}")
+    print("스택 크기: {0}".format(stack.sizeStack()))
+    print("peek: {0}".format(stack.peek()))
+    print("pop: {0}".format(stack.pop()))
+    print("peek: {0}".format(stack.peek()))
+    print("스택이 비었나요? {0}".format(stack.isEmpty()))
     print(stack)

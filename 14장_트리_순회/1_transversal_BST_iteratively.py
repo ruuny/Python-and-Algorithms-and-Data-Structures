@@ -1,8 +1,8 @@
 from collections import deque
-from binary_tree import BinaryTree, NodeBT
+from binary_search_tree import BinarySearchTree, NodeBST
 
 
-class BSTwithTransversalIterative(BinaryTree):
+class BSTwithTransversalIterative(BinarySearchTree):
 
     def inorder(self):
         current = self.root
@@ -13,7 +13,7 @@ class BSTwithTransversalIterative(BinaryTree):
                 current = current.left
             else:
                 current = stack.pop()
-                nodes.append(current.item)
+                nodes.append(current.value)
                 current = current.right
         return nodes
 
@@ -22,7 +22,7 @@ class BSTwithTransversalIterative(BinaryTree):
         nodes, stack = [], []
         while stack or current:
             if current:
-                nodes.append(current.item)
+                nodes.append(current.value)
                 stack.append(current)
                 current = current.left
             else:
@@ -36,7 +36,7 @@ class BSTwithTransversalIterative(BinaryTree):
         while stack:
             current = stack.pop()
             if current:
-                nodes.append(current.item)
+                nodes.append(current.value)
                 stack.append(current.right)
                 stack.append(current.left)
         return nodes
@@ -48,7 +48,7 @@ class BSTwithTransversalIterative(BinaryTree):
         queue.append(current)
         while queue:
             current = queue.popleft()
-            nodes.append(current.item)
+            nodes.append(current.value)
             if current.left:
                 queue.append(current.left)
             if current.right:
@@ -60,15 +60,15 @@ if __name__ == "__main__":
     bst = BSTwithTransversalIterative()
     l = [10, 5, 6, 3, 8, 2, 1, 11, 9, 4]
     for i in l:
-        bst.addNode(i)
+        bst.add_node(i)
 
-    print("노드 8은 말단 노드입니까? ", bst.isLeaf(8))
-    print("노드 8의 레벨은? ", bst.getNodeLevel(8))
-    print("노드 10은 루트 노드입니까? ", bst.isRoot(10))
-    print("노드 1은 루트 노드입니까? ", bst.isRoot(1))
-    print("트리의 높이는? ", bst.getHeight())
-    print("이진 탐색 트리입니까? ", bst.isBST())
-    print("균형 트리입니까? ", bst.isBalanced())
+    print("노드 8은 말단 노드입니까? ", bst.is_leaf(8))
+    print("노드 8의 레벨은? ", bst.get_node_level(8))
+    print("노드 10은 루트 노드입니까? ", bst.is_root(10))
+    print("노드 1은 루트 노드입니까? ", bst.is_root(1))
+    print("트리의 높이는? ", bst.get_height())
+    print("이진 탐색 트리입니까? ", bst.is_bst())
+    print("균형 트리입니까? ", bst.is_balanced())
 
     print("전위 순회: ", bst.preorder())
     print("전위 순회2: ", bst.preorder2())

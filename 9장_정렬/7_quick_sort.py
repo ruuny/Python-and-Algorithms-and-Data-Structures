@@ -7,17 +7,8 @@ def quick_sort_cache(seq):
     ipivot = len(seq) // 2  # 피벗 인덱스
     pivot = seq[ipivot]  # 피벗
 
-    before = []
-    after = []
-    for i, x in enumerate(seq):
-        if i != ipivot:
-            if x <= pivot:
-                before.append(x)
-            else:
-                after.append(x)
-    # 위와 같지만 다음 코드는 seq에 대한 반복문을 두 번 실행한다.
-    # before = [x for i, x in enumerate(seq) if x <= pivot and i != ipivot]
-    # after = [x for i, x in enumerate(seq) if x > pivot and i != ipivot]
+    before = [x for i, x in enumerate(seq) if x <= pivot and i != ipivot]
+    after = [x for i, x in enumerate(seq) if x > pivot and i != ipivot]
     return quick_sort_cache(before) + [pivot] + quick_sort_cache(after)
 
 
@@ -28,13 +19,8 @@ def partition_devided(seq):
     pivot, seq = seq[0], seq[1:]
     before = []
     after = []
-    for x in seq:
-        if x <= pivot:
-            before.append(x)
-        else:
-            after.append(x)
-    # before = [x for x in seq if x <= pivot]
-    # after = [x for x in seq if x > pivot]
+    before = [x for x in seq if x <= pivot]
+    after = [x for x in seq if x > pivot]
     return before, pivot, after
 
 

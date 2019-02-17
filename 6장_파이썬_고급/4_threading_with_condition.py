@@ -3,18 +3,18 @@ import threading
 
 def consumer(cond):
     name = threading.currentThread().getName()
-    print(f"{name} 시작")
+    print("{0} 시작".format(name))
     with cond:
-        print(f"{name} 대기")
+        print("{0} 대기".format(name))
         cond.wait()
-        print(f"{name} 자원 소비")
+        print("{0} 자원 소비".format(name))
 
 
 def producer(cond):
     name = threading.currentThread().getName()
-    print(f"{name} 시작")
+    print("{0} 시작".format(name))
     with cond:
-        print(f"{name} 자원 생산 후 모든 소비자에게 알림")
+        print("{0} 자원 생산 후 모든 소비자에게 알림".format(name))
         cond.notifyAll()
 
 

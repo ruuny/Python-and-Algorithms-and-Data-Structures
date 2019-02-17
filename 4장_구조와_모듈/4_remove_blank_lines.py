@@ -32,7 +32,7 @@ def write_data(lines, filename):
 
 def remove_blank_lines():
     if len(sys.argv) < 2:
-        print(f"Usage: {sys.argv[0]} infile1 [infile2...]")
+        print("Usage: python {0} [file ...]".format(sys.argv[0]))
 
     for filename in sys.argv[1:]:
         lines = read_data(filename)

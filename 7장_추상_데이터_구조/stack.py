@@ -25,4 +25,4 @@ class Stack(object):
             print("Stack is empty.")
 
     def __repr__(self):
-        return f"{self.items}"
+        return repr(self.items)

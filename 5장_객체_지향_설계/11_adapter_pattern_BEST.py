@@ -55,10 +55,10 @@ if __name__ == "__main__":
 
     elf_adapter = minion_adapters[0]
     print()
-    print(f"Name from Adapter: {elf_adapter.name}")
-    print(f"Name from Minion: {elf_adapter.minion.name}")
+    print("Name from Adapter: {0}".format(elf_adapter.name))
+    print("Name from Minion: {0}".format(elf_adapter.minion.name))
 
     minion_adapters[0].name = "Elrond"
     print()
-    print(f"Name from Adapter: {elf_adapter.name}")
-    print(f"Name from Minion: {elf_adapter.minion.name}")
+    print("Name from Adapter: {0}".format(elf_adapter.name))
+    print("Name from Minion: {0}".format(elf_adapter.minion.name))

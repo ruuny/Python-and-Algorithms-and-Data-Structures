@@ -33,7 +33,7 @@ class Queue(object):
         if not self.out_stack:
             self._transfer()
         if self.out_stack:
-            return f"{self.out_stack}"
+            return repr(self.out_stack)
         else:
             print("Queue is empty!")
 
@@ -43,13 +43,13 @@ class Queue(object):
 
 if __name__ == "__main__":
     queue = Queue()
-    print(f"큐가 비었나요? {queue.isEmpty()}")
+    print("큐가 비었나요? {0}".format(queue.isEmpty()))
     print("큐에 숫자 0~9를 추가합니다.")
     for i in range(10):
         queue.enqueue(i)
-    print(f"큐 크기: {queue.size()}")
-    print(f"peek: {queue.peek()}")
-    print(f"dequeue: {queue.dequeue()}")
-    print(f"peek: {queue.peek()}")
-    print(f"큐가 비었나요? {queue.isEmpty()}")
+    print("큐 크기: {0}".format(queue.size()))
+    print("peek: {0}".format(queue.peek()))
+    print("dequeue: {0}".format(queue.dequeue()))
+    print("peek: {0}".format(queue.peek()))
+    print("큐가 비었나요? {0}".format(queue.isEmpty()))
     print(queue)

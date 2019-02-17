@@ -25,4 +25,4 @@ if __name__ == "__main__":
     ll._printList()
     k = 3
     k_from_last = ll.find_kth_to_last(k)
-    print(f"연결 리스트의 끝에서 {k}번째 항목은 {k_from_last}입니다.")
+    print("연결 리스트의 끝에서 {0}번째 항목은 {1}입니다.".format(k, k_from_last))

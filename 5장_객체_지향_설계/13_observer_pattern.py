@@ -98,7 +98,7 @@ class MinionFacade(object):
 class EvilOverlord(Observer):
     def update(self, obj, *args, **kwargs):
         print("The Evil Overlord received a message!")
-        print(f"Object: {obj}, Args: {args}, Kwargs: {kwargs}")
+        print("Object: {0}, Args: {1}, Kwargs: {2}".format(obj, args, kwargs))
 
 
 if __name__ == "__main__":

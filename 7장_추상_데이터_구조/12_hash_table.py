@@ -24,7 +24,7 @@ class HashTableLL(object):
 
     def _print(self):
         for i in range(self.size):
-            print(f"슬롯(slot) {i}:")
+            print("슬롯(slot) {0}:".format(i))
             self.slots[i]._printList()
 
 

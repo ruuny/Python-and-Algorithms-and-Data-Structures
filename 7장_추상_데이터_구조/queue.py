@@ -18,4 +18,4 @@ class Queue(object):
         return self.items[-1]
 
     def __repr__(self):
-        return f"{self.items}"
+        return repr(self.items)

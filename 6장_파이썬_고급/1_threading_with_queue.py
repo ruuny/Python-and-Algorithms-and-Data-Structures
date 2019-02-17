@@ -10,7 +10,7 @@ def worker(num):
         if item is None:
             break
         # 작업을 처리한다.
-        print(f"스레드 {num+1} : 처리 완료 {item}")
+        print("스레드 {0} : 처리 완료 {1}".format(num+1, item))
         q.task_done()
 
 

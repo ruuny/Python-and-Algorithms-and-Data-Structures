@@ -15,10 +15,10 @@ def find_elem_matrix_bool(m1, value):
 
 def test_find_elem_matrix_bool():
     m1 = [[1, 2, 8, 9], [2, 4, 9, 12], [4, 7, 10, 13], [6, 8, 11, 15]]
-    assert(find_elem_matrix_bool(m1, 8) == True)
-    assert(find_elem_matrix_bool(m1, 3) == False)
+    assert(find_elem_matrix_bool(m1, 8) is True)
+    assert(find_elem_matrix_bool(m1, 3) is False)
     m2 = [[0]]
-    assert(find_elem_matrix_bool(m2, 0) == True)
+    assert(find_elem_matrix_bool(m2, 0) is True)
     print("테스트 통과!")
 
 

@@ -21,10 +21,10 @@ def test_searching_in_a_matrix():
     a = [[1, 3, 5], [7, 9, 11], [13, 15, 17]]
     import numpy
     b = numpy.array([(1, 2), (3, 4)])
-    assert(searching_in_a_matrix(a, 13) == True)
-    assert(searching_in_a_matrix(a, 14) == False)
-    assert(searching_in_a_matrix(b, 3) == True)
-    assert(searching_in_a_matrix(b, 5) == False)
+    assert(searching_in_a_matrix(a, 13) is True)
+    assert(searching_in_a_matrix(a, 14) is False)
+    assert(searching_in_a_matrix(b, 3) is True)
+    assert(searching_in_a_matrix(b, 5) is False)
     print("테스트 통과!")
 
 

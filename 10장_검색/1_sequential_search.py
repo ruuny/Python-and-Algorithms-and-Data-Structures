@@ -9,8 +9,8 @@ def test_sequential_search():
     seq = [1, 5, 6, 8, 3]
     n1 = 5
     n2 = 7
-    assert(sequential_search(seq, n1) == True)
-    assert(sequential_search(seq, n2) == False)
+    assert(sequential_search(seq, n1) is True)
+    assert(sequential_search(seq, n2) is False)
     print("테스트 통과!")
 
 

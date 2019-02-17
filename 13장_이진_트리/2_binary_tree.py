@@ -1,159 +1,161 @@
-""" 
+"""
 다음 그림의 이진 트리를 구현한다.
 
-                              1               ---> 레벨 0
-                       2            3         ---> 레벨 1
-                  4        5                  ---> 레벨 2
-              6       7                       ---> 레벨 3
-          8      9                            ---> 레벨 4
+                              1          ---> 레벨 1
+                        2           3    ---> 레벨 2
+                    4       5            ---> 레벨 3
+                6       7                ---> 레벨 4
+            8       9                    ---> 레벨 5
 
     속성은 다음과 같다.
         - 노드의 개수(크기): n = 9
         - 분기(또는 내부 노드) 수: b = n-1 = 8
-        - 루트 노드 값: 1
+        - 루트 노드: 1
         - 최대 깊이 또는 높이: h = 4
         - 균형 트리입니까? NO
         - 이진 탐색 트리입니까? NO
 """
 
 
+class Height(object):
+    def __init__(self):
+        self.height = 0
+
+
 class NodeBT(object):
-    def __init__(self, item=None, level=0):
-        self.item = item
+    def __init__(self, value=None, level=1):
+        self.value = value
         self.level = level
         self.left = None
         self.right = None
 
     def __repr__(self):
-        return '{}'.format(self.item)
+        return "{}".format(self.value)
 
-    def _addNextNode(self, value, level_here=1):
+    def _add_next_node(self, value, level_here=2):
         new_node = NodeBT(value, level_here)
-        if not self.item:
-            self.item = new_node
+        if not self.value:
+            self.value = new_node
         elif not self.left:
             self.left = new_node
         elif not self.right:
             self.right = new_node
         else:
-            self.left = self.left._addNextNode(value, level_here+1)
+            # 노드에 왼쪽 오른쪽 자식이 모두 있다면,
+            # 왼쪽 자식 노드에 새 노드를 추가한다.
+            # 그래서 예제의 트리가 왼쪽으로 치우쳐 있다.
+            self.left = self.left._add_next_node(value, level_here+1)
         return self
 
-    def _searchForNode(self, value):
-        if self.item == value:
+    def _search_for_node(self, value):
+        # 전위 순회(pre-order)로 값을 찾는다.
+        if self.value == value:
             return self
         else:
             found = None
             if self.left:
-                found = self.left._searchForNode(value)
+                found = self.left._search_for_node(value)
             if self.right:
-                found = found or self.right._searchForNode(value)
+                found = found or self.right._search_for_node(value)
             return found
 
-    def _isLeaf(self):
+    def _is_leaf(self):
+        # 왼쪽, 오른쪽 자식이 모두 없는 노드
         return not self.right and not self.left
 
-    def _getMaxHeight(self):
+    def _get_max_height(self):
         # 노드에서 최대 높이를 얻는다 - O(n)
-        levelr, levell = 0, 0
+        heightr, heightl = 0, 0
         if self.right:
-            levelr = self.right._getMaxHeight() + 1
+            heightr = self.right._get_max_height() + 1
         if self.left:
-            levell = self.left._getMaxHeight() + 1
-        return max(levelr, levell)
+            heightl = self.left._get_max_height() + 1
+        return max(heightr, heightl)
 
-    def _getMinHeight(self, level=0):
-        # 노드에서 최소 높이를 얻는다 - O(n)
-        levelr, levell = -1, -1
+    def _is_balanced(self, height=Height()):
+        # 균형 트리인지 확인한다 - O(n)
+        lh = Height()
+        rh = Height()
+
+        if self.value is None:
+            return True
+
+        l, r = True, True
+        if self.left:
+            l = self.left._is_balanced(lh)
         if self.right:
-            levelr = self.right._getMinHeight(level + 1)
-        if self.left:
-            levell = self.left._getMinHeight(level + 1)
-        return min(levelr, levell) + 1
+            r = self.right._is_balanced(rh)
 
-    def _isBalanced(self):
-        # 높이를 계산하여, 균형 트리인지 확인한다 - O(n^2)
-        if self._getMaxHeight() - self._getMinHeight() < 2:
-            return False
+        height.height = max(lh.height, rh.height) + 1
+
+        if abs(lh.height - rh.height) <= 1:
+            return l and r
+
+        return False
+
+    def _is_bst(self, left=None, right=None):
+        # 이진 탐색 트리인지 확인한다 - O(n)
+        if self.value:
+            if left and self.value < left:
+                return False
+            if right and self.value > right:
+                return False
+
+            l, r = True, True
+            if self.left:
+                l = self.left._is_bst(left, self.value)
+            if self.right:
+                r = self.right._is_bst(self.value, right)
+            return l and r
         else:
-            if self._isLeaf():
-                return True
-            elif self.left and self.right:
-                return self.left._isBalanced() and self.right._isBalanced()
-            elif not self.left and self.right:
-                return self.right._isBalanced()
-            elif not self.right and self.left:
-                return self.left._isBalanced()
-
-    def _isBST(self, mintree=None, maxtree=None):
-        # 중위 순회(inorder)로 이진 탐색 트리인지 확인한다.
-        if self.item:
-            if not mintree:
-                mintree = self.item
-            if not maxtree:
-                maxtree = self.item
-
-            if self._isLeaf():
-                return True
-            elif self.left:
-                if self.left.item < self.item and mintree > self.left.item:
-                    mintree = self.left.item
-                    return self.left._isBST(mintree, maxtree)
-                else:
-                    return False
-            elif self.right:
-                if self.right.item > self.item and maxtree < self.right.item:
-                    maxtree = self.right.item
-                    return self.right._isBST(mintree, maxtree)
-                else:
-                    return False
-        else:
-            print('빈 트리입니다.')
+            return True
 
 
 class BinaryTree(object):
-
     def __init__(self):
         self.root = None
 
-    def addNode(self, value):
+    def add_node(self, value):
         if not self.root:
             self.root = NodeBT(value)
         else:
-            self.root._addNextNode(value)
+            self.root._add_next_node(value)
 
-    def isLeaf(self, value):
-        node = self.root._searchForNode(value)
-        return node._isLeaf()
+    def is_leaf(self, value):
+        node = self.root._search_for_node(value)
+        if node:
+            return node._is_leaf()
+        else:
+            return False
 
-    def getNodeLevel(self, item):
-        node = self.root._searchForNode(item)
+    def get_node_level(self, value):
+        node = self.root._search_for_node(value)
         if node:
             return node.level
         else:
-            raise Exception('노드를 찾을 수 없습니다.')
+            return False
 
-    def isRoot(self, value):
-        return self.root.item == value
+    def is_root(self, value):
+        return self.root.value == value
 
-    def getHeight(self):
-        return self.root._getMaxHeight()
+    def get_height(self):
+        return self.root._get_max_height()
 
-    def isBalanced(self):
-        return self.root._isBalanced()
+    def is_balnced(self):
+        return self.root._is_balanced()
 
-    def isBST(self):
-        return self.root._isBST()
+    def is_bst(self):
+        return self.root._is_bst()
 
 
 if __name__ == "__main__":
     bt = BinaryTree()
     for i in range(1, 10):
-        bt.addNode(i)
-    print("노드 8은 말단 노드입니까? ", bt.isLeaf(8))
-    print("노드 8의 레벨은? ", bt.getNodeLevel(8))
-    print("노드 10은 루트 노드입니까? ", bt.isRoot(10))
-    print("노드 1은 루트 노드입니까? ", bt.isRoot(1))
-    print("트리의 높이는? ", bt.getHeight())
-    print("이진 탐색 트리입니까? ", bt.isBST())
-    print("균형 트리입니까? ", bt.isBalanced())
+        bt.add_node(i)
+    print("노드 8은 말단 노드입니까? ", bt.is_leaf(8))
+    print("노드 8의 레벨은? ", bt.get_node_level(8))
+    print("노드 10은 루트 노드입니까? ", bt.is_root(10))
+    print("노드 1은 루트 노드입니까? ", bt.is_root(1))
+    print("트리의 높이는? ", bt.get_height())
+    print("이진 탐색 트리입니까? ", bt.is_bst())
+    print("균형 트리입니까? ", bt.is_balnced())

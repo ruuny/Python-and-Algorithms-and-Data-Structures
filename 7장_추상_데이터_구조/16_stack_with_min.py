@@ -36,12 +36,12 @@ class StackMin(Stack):
         aux = []
         for i in self.items:
             aux.append(i.value)
-        return f"{aux}"
+        return repr(aux)
 
 
 if __name__ == "__main__":
     stack = StackMin()
-    print(f"스택이 비었나요? {stack.isEmpty()}")
+    print("스택이 비었나요? {0}".format(stack.isEmpty()))
     print("스택에 숫자 10~1과 1~4를 추가합니다.")
     for i in range(10, 0, -1):
         stack.push(i)
@@ -49,11 +49,11 @@ if __name__ == "__main__":
         stack.push(i)
     print(stack)
 
-    print(f"스택 크기: {stack.size()}")
-    print(f"peek: {stack.peek()}")
-    print(f"peekMinimum: {stack.peekMinimum()}")
-    print(f"pop: {stack.pop()}")
-    print(f"peek: {stack.peek()}")
-    print(f"peekMinimum: {stack.peekMinimum()}")
-    print(f"스택이 비었나요? {stack.isEmpty()}")
+    print("스택 크기: {0}".format(stack.size()))
+    print("peek: {0}".format(stack.peek()))
+    print("peekMinimum: {0}".format(stack.peekMinimum()))
+    print("pop: {0}".format(stack.pop()))
+    print("peek: {0}".format(stack.peek()))
+    print("peekMinimum: {0}".format(stack.peekMinimum()))
+    print("스택이 비었나요? {0}".format(stack.isEmpty()))
     print(stack)
