@@ -10,12 +10,12 @@ class ThreadPool(object):
     def acquire(self, name):
         with self.lock:
             self.active.append(name)
-            print("획득: {0} | 쓰레드 풀: {1}".format(name, self.active))
+            print("획득: {0} | 스레드 풀: {1}".format(name, self.active))
 
     def release(self, name):
         with self.lock:
             self.active.remove(name)
-            print("반환: {0} | 쓰레드 풀: {1}".format(name, self.active))
+            print("반환: {0} | 스레드 풀: {1}".format(name, self.active))
 
 
 def worker(semaphore, pool):
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     semaphore = threading.Semaphore(3)
     for i in range(10):
         t = threading.Thread(
-            target=worker, name="쓰레드 " + str(i), args=(semaphore, pool))
+            target=worker, name="스레드 " + str(i), args=(semaphore, pool))
         t.start()
         threads.append(t)
     for t in threads:

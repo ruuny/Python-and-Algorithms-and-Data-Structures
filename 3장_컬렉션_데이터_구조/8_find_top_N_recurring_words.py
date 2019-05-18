@@ -9,10 +9,10 @@ def find_top_N_recurring_words(seq, N):
 
 
 def test_find_top_N_recurring_words():
-    seq = "버피 엔젤 몬스터 잰더 윌로우 버피 몬스터 슈퍼 버피 엔젤"
+    seq = "버피 에인절 몬스터 잰더 윌로우 버피 몬스터 슈퍼 버피 에인절"
     N = 3
     assert(find_top_N_recurring_words(seq, N) ==
-           [("버피", 3), ("엔젤", 2), ("몬스터", 2)])
+           [("버피", 3), ("에인절", 2), ("몬스터", 2)])
     print("테스트 통과!")
 
 

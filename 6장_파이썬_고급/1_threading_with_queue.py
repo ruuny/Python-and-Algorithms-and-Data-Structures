@@ -25,7 +25,7 @@ if __name__ == "__main__":
     for item in range(20):
         q.put(item)
 
-    # 모든 작업이 끝날때까지 대기한다(block).
+    # 모든 작업이 끝날 때까지 대기한다(block).
     q.join()
 
     # 워커 스레드를 종료한다(stop).

@@ -30,7 +30,7 @@ def is_palindrome3(s):
 
 
 if __name__ == "__main__":
-    str1 = "다시 합창 합시다"
+    str1 = "다시 합창합시다"
     str2 = ""
     str3 = "hello"
     print(is_palindrome(str1))

@@ -32,6 +32,6 @@ if __name__ == "__main__":
     pub.register(james)
     pub.register(jeff)
 
-    pub.dispatch("점심시간 입니다.")
+    pub.dispatch("점심시간입니다.")
     pub.unregister(jeff)
-    pub.dispatch("퇴근시간 입니다.")
+    pub.dispatch("퇴근시간입니다.")

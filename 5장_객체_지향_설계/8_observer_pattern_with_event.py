@@ -38,5 +38,5 @@ if __name__ == "__main__":
     pub.register("퇴근", james)
     pub.register("점심", jeff)
 
-    pub.dispatch("점심", "점심시간 입니다.")
+    pub.dispatch("점심", "점심시간입니다.")
     pub.dispatch("퇴근", "저녁시간 입니다.")
