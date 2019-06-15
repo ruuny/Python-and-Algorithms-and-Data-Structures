@@ -11,7 +11,7 @@ class BSTwithTransversalRecursively(BinarySearchTree):
         self.nodes_in = []
 
     def BFT(self):
-        self.root.level = 0
+        self.root.level = 1
         queue = [self.root]
         current_level = self.root.level
 
