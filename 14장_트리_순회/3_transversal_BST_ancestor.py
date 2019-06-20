@@ -24,7 +24,7 @@ if __name__ == "__main__":
     for i in l:
         bst.add_node(i)
     path = bst.preorder()
-    print("중위 순회: ", path)
+    print("전위 순회: ", path)
 
     print("1과 6의 공통 상위 조상 :", find_ancestor(path, 1, 6))
     print("1과 11의 공통 상위 조상: ", find_ancestor(path, 1, 11))
