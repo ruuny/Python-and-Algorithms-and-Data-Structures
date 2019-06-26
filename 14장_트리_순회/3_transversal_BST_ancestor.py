@@ -2,6 +2,7 @@ from transversal_BST_recursively import BSTwithTransversalRecursively
 
 
 def find_ancestor(path, low_value, high_value):
+    # 두 인수는 트리에 존재하는 노드여야 하며 두 번째 인수가 더 커야 한다.
     while path:
         current_value = path[0]
         if current_value < low_value:
@@ -26,7 +27,7 @@ if __name__ == "__main__":
     path = bst.preorder()
     print("전위 순회: ", path)
 
-    print("1과 6의 공통 상위 조상 :", find_ancestor(path, 1, 6))
-    print("1과 11의 공통 상위 조상: ", find_ancestor(path, 1, 11))
-    print("1과 4의 공통 상위 조상: ", find_ancestor(path, 1, 4))
-    print("8와 9의 공통 상위 조상: ", find_ancestor(path, 8, 9))
+    print("1과 6의 최소 공통 조상 :", find_ancestor(path, 1, 6))
+    print("1과 11의 최소 공통 조상: ", find_ancestor(path, 1, 11))
+    print("1과 4의 최소 공통 조상: ", find_ancestor(path, 1, 4))
+    print("8와 9의 최소 공통 조상: ", find_ancestor(path, 8, 9))

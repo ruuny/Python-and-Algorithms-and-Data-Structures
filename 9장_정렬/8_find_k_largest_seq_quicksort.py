@@ -36,7 +36,7 @@ def find_k_largest_seq_quickselect(seq, k):
     # k번째로 큰 값을 찾는다.
     kth_largest = quick_select(seq, k)
 
-    # k번째 보다 큰 값을 저장한다.
+    # k번째보다 큰 값을 저장한다.
     result = []
     for item in seq:
         if item >= kth_largest:

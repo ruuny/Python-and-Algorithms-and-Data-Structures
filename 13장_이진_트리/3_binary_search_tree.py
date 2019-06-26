@@ -74,11 +74,11 @@ if __name__ == "__main__":
     # for i in range(1, 10):
     for i in [6, 4, 8, 2, 5, 7, 9, 1, 3]:
         bst.add_node(i)
-    print("노드 8은 말단 노드입니까? ", bst.isLeaf(8))
-    print("노드 1의 레벨은? ", bst.getNodeLevel(1))
-    print("노드 10은 루트 노드입니까? ", bst.isRoot(10))
-    print("노드 1은 루트 노드입니까? ", bst.isRoot(1))
-    print("트리의 높이는? ", bst.getHeight())
-    print("이진 탐색 트리입니까? ", bst.isBST())
-    print("균형 트리입니까? ", bst.isBalanced())
+    print("노드 8은 말단 노드입니까? ", bst.is_leaf(8))
+    print("노드 1의 레벨은? ", bst.get_node_level(1))
+    print("노드 10은 루트 노드입니까? ", bst.is_root(10))
+    print("노드 1은 루트 노드입니까? ", bst.is_root(1))
+    print("트리의 높이는? ", bst.get_height())
+    print("이진 탐색 트리입니까? ", bst.is_bst())
+    print("균형 트리입니까? ", bst.is_balanced())
     # pre_order(bst.root)
