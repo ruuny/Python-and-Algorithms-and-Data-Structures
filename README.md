@@ -1,23 +1,13 @@
-##   ✨ Algorithms & Data Structures in Python (Book, Hanbit Media, Inc.)  ✨ 
+## ✨ 파이썬 자료구조와 알고리즘 ✨
 
-* Including Python solutions for every exercises from "Cracking the Code Interview".
-* #### 📚[Download the digital book here.](https://github.com/bt3gl/Python-and-Algorithms-and-Data-Structures/blob/master/ebook/book_second_edition.pdf)
+예스24 링크: http://www.yes24.com/Product/Goods/74971408
+![](http://www.hanbit.co.kr/data/books/B8465804191_l.jpg)
+
+* #### 📚[원서 다운로드는 여기를 클릭](https://github.com/AstinCHOI/Python-and-Algorithms-and-Data-Structures/blob/master/ebook/book_second_edition.pdf)
 
 ![](HALEIWA.jpg)
 
-
-##  ✨ Installation:
-
-The snippets are designed to be used individually. However, If you want  to install all fo the libraries in your [virtualenv](https://coderwall.com/p/8-aeka), do this:
-
-```
-$ pip install -r requirements.txt
-```
-
-
-
 ----
-
 
 ## License
 

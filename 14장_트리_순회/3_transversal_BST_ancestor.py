@@ -26,6 +26,7 @@ if __name__ == "__main__":
     path = bst.preorder()
     print("전위 순회: ", path)
 
+    # 입력된 두 노드(인자)는 트리에 존재하며 오름차순으로 입력한다.
     print("1과 6의 공통 상위 조상 :", find_ancestor(path, 1, 6))
     print("1과 11의 공통 상위 조상: ", find_ancestor(path, 1, 11))
     print("1과 4의 공통 상위 조상: ", find_ancestor(path, 1, 4))
