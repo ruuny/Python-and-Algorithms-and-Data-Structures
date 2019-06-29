@@ -35,7 +35,7 @@ def quick_sort_cache_devided(seq):
 
 def partition(seq, start, end):
     """
-    3) 두 함수로 나누어서 구현한다(캐시 사용 안함)
+    3) 두 함수로 나누어서 구현한다(캐시 사용 안 함).
     """
     pivot = seq[start]
     left = start + 1

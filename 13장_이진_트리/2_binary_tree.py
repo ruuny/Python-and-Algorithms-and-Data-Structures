@@ -141,7 +141,7 @@ class BinaryTree(object):
     def get_height(self):
         return self.root._get_max_height()
 
-    def is_balnced(self):
+    def is_balanced(self):
         return self.root._is_balanced()
 
     def is_bst(self):
