@@ -28,7 +28,7 @@ class NodeAVL(NodeBT):
         self.height = 1 + max(self.get_height(self.left),
                               self.get_height(self.right))
 
-        # 3) 균형 요소(왼쪽 트리 높이 - 오른쪽 트리 높이)
+        # 3) 균형도(왼쪽 트리 높이 - 오른쪽 트리 높이)
         balance = self.get_balance()
 
         # 4) 트리의 균형이 맞지 않을 경우 회전한다.
@@ -60,8 +60,8 @@ class NodeAVL(NodeBT):
                x                  [y]
              /   \               /   \
             y     T3   <----    T1    x
-           / \       (왼쪽 회전)  / \
-          T1  T2              T2  T3
+           / \       (왼쪽 회전)     / \
+          T1  T2                    T2  T3
         """
         x = self.right
         T2 = x.left
@@ -85,8 +85,8 @@ class NodeAVL(NodeBT):
               [x]                    y
              /   \                 /   \
             y     T3    ---->     T1    x
-           / \       (오른쪽 회전)  / \
-          T1  T2                T2  T3
+           / \       (오른쪽 회전)     / \
+          T1  T2                      T2  T3
         """
         y = self.left
         T2 = y.right
