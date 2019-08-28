@@ -60,7 +60,12 @@ if __name__ == "__main__":
     k = len(seq) // 2
     print(sorted(seq))
     print(quick_select_cache(seq, k-1))
-    print(quick_select(seq, k))
+
+    # 아래 함수는 원본을 수정하므로 깊은 복사 실행
+    import copy
+    seq_copy = copy.deepcopy(seq)
+    print(quick_select(seq_copy, k))
+
     # 중앙값(median) 출력을 위해서 넘파이를 사용함
     import numpy
     print(numpy.median(seq))
