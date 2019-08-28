@@ -30,8 +30,7 @@ def swap(seq, x, y):
 def quick_select(seq, k, left=None, right=None):
     left = left or 0
     right = right or len(seq) - 1
-    # ipivot = random.randint(left, right)
-    ipivot = len(seq) // 2
+    ipivot = random.randint(left, right)
     pivot = seq[ipivot]
 
     # 피벗을 정렬 범위 밖으로 이동한다.
